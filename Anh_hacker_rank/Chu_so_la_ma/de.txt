@@ -1,0 +1,50 @@
+Chữ số La Mã được thể hiện bằng bảy ký hiệu khác nhau: I, V, X, L, C, D và M. Giá trị biểu tượng:
+I 1
+V 5
+X 10
+L 50
+C 100
+D 500
+M 1000
+
+Ví dụ:
+Số 2 được viết là II bằng chữ số La Mã là I+I.
+Số 12 được viết là XII, tức là X + II.
+Số 27 được viết là XXVII tức là XX + V + II.
+
+Chữ số La Mã thường được viết từ lớn nhất đến nhỏ nhất từ trái sang phải. Tuy nhiên, số Bốn không phải là IIII. 
+Thay vào đó, số bốn được viết là IV. Bởi vì một ở trước năm, chúng ta trừ V-I thành bốn.
+Nguyên tắc tương tự áp dụng cho số chín, được viết là IX. Có sáu trường hợp sử dụng phép trừ:
+
+I có thể được đặt trước V (5) và X (10) để tạo thành 4 và 9.
+X có thể được đặt trước L (50) và C (100) để tạo thành 40 và 90.
+C có thể được đặt trước D (500) và M (1000) để tạo thành 400 và 900.
+
+Yêu cầu: Cho một số la mã, chuyển đổi nó thành một số nguyên.
+
+Ví dụ: 
+Input
+MCMXCIV
+
+Output
+1994
+
+Input Format
+Dữ liệu vào gồm 1 dòng, ghi chuỗi số dạng la mã
+
+Constraints
+Các số thực được viết với một chữ số thập phân, cách nhau bởi một dấu cách. s: Nhiều nhất là 15 ký tự s chỉ chứa các ký tự ('I', 'V', 'X', 'L', 'C', 'D', 'M'). Đảm bảo rằng s là một số La Mã hợp lệ trong phạm vi [1, 3999].
+
+Output Format
+Kết quả là 1 số nguyên từ 1 đến 3999
+
+Sample Input 0
+MCMXCIV
+
+Sample Output 0
+1994
+
+Explanation 0
+Phân tách MCMXCIV thành các thành phần tương ứng lần lượt là:
+M(1000) CM(900) XC(90) IV(4) có tổng 1000 + 900 + 90 + 4 = 1994
+Cần đưa ra output là 1994 tương ứng với số la mã MCMXCIV

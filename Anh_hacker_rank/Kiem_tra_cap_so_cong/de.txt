@@ -1,0 +1,22 @@
+Trong toán học, một cấp số cộng là một dãy số thoả mãn điều kiện: hai phần tử liên tiếp nhau sai khác nhau một hằng số. 
+Chẳng hạn, dãy số 3, 5, 7, 9, 11,... là một cấp số cộng với các phân tử liên tiếp sai khác nhau hằng số 2.
+Cho một mảng số nguyên. Hãy kiểm tra xem nó có tạo thành một cấp số cộng hay không?
+
+Input Format
+
+Dòng thứ nhất chứa số nguyên 
+Dòng chứ hai là một dãy gồm  các số nguyên
+Constraints
+-
+Output Format
+Trả về số nguyên dương 1 hoặc 0:
+Nếu kết quả đúng thì trả về 1.
+Ngược lại, kết quả sai thì trả về 0.
+
+Sample Input 0
+3
+1 4 7
+Sample Output 0
+1
+Explanation 0
+Kết quả là đúng vì đầu vào là 1 cấp số cộng với công sai là 3

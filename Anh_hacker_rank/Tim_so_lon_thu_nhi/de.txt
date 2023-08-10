@@ -1,0 +1,30 @@
+Viết phương thức trả về index của số lớn thứ nhì trong mảng.
+
+Nếu không có số lớn nhì thì trả về -1.
+Nếu có nhiều số lớn nhì thì lấy vị trí của số đầu tiên.
+Input Format
+
+Số nguyên 
+Một mảng chứa  các số nguyên
+Constraints
+
+-
+
+Output Format
+Kết quả là một số nguyên index của số lớn thứ 2 trong mảng đã cho
+
+Sample Input 0
+6
+8 3 6 1 5 4
+Sample Output 0
+2
+Explanation 0
+Số 6 là số lớn thứ 2 trong mảng và index của số 6 là 2
+
+Sample Input 1
+8
+8 3 6 1 5 4 7 2
+Sample Output 1
+6
+Explanation 1
+Số 7 là số lớn thứ 2 trong mảng và index của số 7 là 6

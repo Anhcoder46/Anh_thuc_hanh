@@ -1,0 +1,60 @@
+Cho một chuỗi s chỉ chứa các ký tự '(', ')', '{', '}', '[' và ']', hãy xác định xem chuỗi đầu vào có hợp lệ hay không.
+Một chuỗi đầu vào hợp lệ nếu:
+Các dấu ngoặc mở phải được đóng bằng các dấu ngoặc đơn cùng loại.
+Mở ngoặc phải được đóng theo đúng thứ tự.
+Mỗi dấu ngoặc đóng có một dấu ngoặc mở tương ứng cùng loại.
+
+Ví dụ: 
+Input 1
+()
+Output 1
+True
+
+Input 2
+()[]{}
+Output 2
+True
+
+Input 3
+(]
+Output 3
+False
+
+Input Format
+Dữ liệu nhập vào gồm 1 dòng chứa các ký tự ngoặc đơn
+Constraints
+Độ dài chuỗi ký tự từ 1 đến 104 Chuỗi s chỉ bao gồm các dấu ngoặc đơn '()[]{}'.
+Output Format
+Kết quả trả về là chuỗi có giá trị "True" hoặc "False"
+
+Sample Input 0
+()
+Sample Output 0
+True
+
+Explanation 0
+Dấu ngoặc thứ 2 tương ứng là dấu ngoặc để đóng dấu ngoặc 1, 
+không có dấu ngoặc nào thừa ra và cũng không có dấu ngoặc nào sai vị tri logic.
+In ra True là kết quả của test case
+
+Sample Input 1
+()[]{}
+
+Sample Output 1
+True
+
+Explanation 1
+Dấu ngoặc thứ 2 tương ứng là dấu ngoặc để đóng dấu ngoặc 1, 
+dấu ngoặc thứ 4 tương ứng là dấu ngoặc để đóng dấu ngoặc 3, 
+dấu ngoặc thứ 6 tương ứng là dấu ngoặc để đóng dấu ngoặc 5, 
+không có dấu ngoặc nào thừa ra và cũng không có dấu ngoặc nào sai vị tri logic.
+In ra True là kết quả của test case
+
+Sample Input 2
+(]
+Sample Output 2
+False
+
+Explanation 2
+Dấu ngoặc thứ 2 là dấu ngoặc ] đóng nhưng không đúng logic để ghép với dấu ngoặc (.
+Cần in ra False là kết quả test case
