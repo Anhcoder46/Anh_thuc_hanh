@@ -1,0 +1,27 @@
+Tìm chữ số (!=0) cuối cùng của n! (giai thừa)
+Input Format
+Đầu vào là một số nguyên n
+
+Constraints
+-
+
+Output Format
+Đầu ra là chữ số cuối cùng khác 0 của n!
+
+Sample Input 0
+5
+
+Sample Output 0
+2
+
+Explanation 0
+5! = 120 => Số cuối cùng khác 0 của 5! là 2
+Sample Input 1
+
+12
+Sample Output 1
+
+6
+Explanation 1
+
+12! = 479001600 => Số cuối cùng khác 0 là 6

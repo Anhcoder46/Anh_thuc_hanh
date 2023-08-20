@@ -1,0 +1,33 @@
+Yêu cầu: Cho trước N điểm trên mặt phẳng với tọa độ nguyên và cho trước số thực dương R. 
+Yêu cầu của bài toán là kiểm tra xem N điểm có thể nằm trong một vòng tròn bán kính R hay không?
+
+Input
+4
+1.0   1.5   2.1  4.3  6.2
+1 4
+2 3
+0 1
+1 0
+
+Output
+3
+
+Input Format
+Dữ liệu có cấu trúc như sau: Dòng đầu tiên ghi số N (3 <= N <= 100). Dòng thứ hai ghi 5 số thực dương R1, R2, R3, R4, R5 xếp theo thứ tự tăng dần. Các số cách nhau bởi dấu cách. N dòng tiếp theo, mỗi dòng ghi một cặp số nguyên là toạ độ của N điểm tương ứng.
+
+Constraints
+
+-
+Output Format
+Kết quả là một số K duy nhất (1 <= K <= 5), sao cho RK là số nhỏ nhất trong các số trên và tồn tại một vòng tròn có bán kính RK chứa được tập hợp điểm đã cho, kể cả trường hợp điểm nằm trên biên của vòng tròn. Trong trường hợp không tìm thấy vòng tròn như vậy thì ghi ra số –1.
+
+Sample Input 0
+4
+1.0 1.5 2.1 4.3 6.2
+1 4
+2 3
+0 1
+1 0
+
+Sample Output 0
+3

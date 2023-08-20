@@ -1,0 +1,26 @@
+Yêu cầu: Cần tính số dư của phép chia  cho     với  và  là số tự nhiên có không quá 12 chữ số,  
+là số tự nhiên không quá 3 chữ số.
+
+Input
+125 5 29
+
+Output
+5
+
+Input Format
+Dữ liệu vào gồm một dòng có 3 số tương ứng là ,  và , các số cách nhau bởi dấu cách.
+
+Constraints
+-
+Output Format
+Kết quả gồm một dòng ghi kết quả số dư R tính được.
+
+Sample Input 0
+125 5 29
+
+Sample Output 0
+5
+
+Explanation 0
+Output của testcase sẽ là kết quả của phép tính 125^5 mod 29.
+In ra 1 số 5 duy nhất là kết quả phép tính.

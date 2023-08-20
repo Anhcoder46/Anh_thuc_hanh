@@ -1,0 +1,28 @@
+Viết phương thức đếm số ký tự khác nhau ở chuỗi đầu vào.
+Input Format
+Đầu vào là chuỗi cần đếm số ký tự khác nhau.
+
+Constraints
+
+-
+
+Output Format
+Đầu ra là một số nguyên chứa số lượng ký tự khác nhau.
+
+Sample Input 0
+cabca
+
+Sample Output 0
+3
+
+Explanation 0
+Có 3 ký tự khác nhau là: a, b, 
+
+Sample Input 1
+ca
+
+Sample Output 1
+2
+
+Explanation 1
+Có 2 ký tự khác nhau là: a và c

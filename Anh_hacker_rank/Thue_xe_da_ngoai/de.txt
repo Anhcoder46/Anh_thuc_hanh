@@ -1,0 +1,35 @@
+Để chúc mừng ngày 8/3, các bạn học sinh lớp 12A3 dự định tổ chức dã ngoại đến biển Nha Trang và lớp sẽ đi bằng taxi. 
+Các bạn trong lớp được chia thành n nhóm, mỗi nhóm thứ i gồm x bạn (1 ≤ x ≤ 4 vì mỗi chiếc taxi chở tối đa 4 hành khách).
+Lớp 12A3 cần thuê ít nhất bao nhiêu chiếc taxi để chở các nhóm đi, 
+với điều kiện là các bạn trong nhóm phải ngồi chung taxi (một taxi có thể chở một nhóm trở lên).
+
+Input Format
+Số nguyên n là số nhóm cần di chuyển
+Mảng chứa n phần tử là số thành viên của từng nhóm
+
+Constraints
+-
+Output Format
+Số lượng tối thiểu taxi cần thiết để chở tất cả học sinh đến nơi.
+
+Sample Input 0
+5
+1 2 4 3 3
+
+Sample Output 0
+4
+
+Explanation 0
+Giải thích: Vì nhóm 1 và nhóm 2 có tổng là 3 người nên có thể ngồi chung 1 xe, 
+số xe tối thiểu để chở 5 nhóm này là 4 xe với số lượng người ở các xe là 3 4 3 3, kết quả trả về là 4
+
+Sample Input 1
+6
+2 2 4 3 2 3
+
+Sample Output 1
+5
+
+Explanation 1
+Giải thích: Vì nhóm 1 và nhóm 2 có tổng là 4 người nên có thể ngồi chung 1 xe, 
+số xe tối thiểu để chở 6 nhóm này là 5 xe với số lượng người ở các xe là 4 4 3 2 3, kết quả trả về là 5

@@ -1,0 +1,24 @@
+Cho một dãy số nguyên gồm N phần tử A1, A2, ... ,AN.
+
+Biết rằng dãy con tăng đơn điệu là 1 dãy Aj1,..., Ajk thỏa mãn i1 < i2 < ...< ik và Aj1 < Aj2 <...<Ajk . 
+Hãy cho biết dãy con tăng đơn điệu dài nhất của dãy này có bao nhiêu phần tử?
+
+Input Format
+Dòng 1 là số nguyên N(1<= N <= 1000).
+Dòng 2 chứa  N số nguyên là số  A1, A2,...,AN(1 <= Ai<=10000).
+Constraints
+N(1<= N <= 1000)
+A1, A2,...,AN(1 <= Ai<=10000)
+
+Output Format
+Ghi ra độ dài của dãy con tăng đơn điệu dài nhất.
+
+Sample Input 0
+6
+1 2 5 4 6 2
+
+Sample Output 0
+4
+
+Explanation 0
+Dãy con dài nhất là dãy A1 = 1 < A2 = 2 < A4 = 4 < A5 = 6, độ dài dãy này là 4.

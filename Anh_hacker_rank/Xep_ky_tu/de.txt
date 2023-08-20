@@ -1,0 +1,41 @@
+Cho hai xâu ký tự, hãy kiểm tra xem có tồn tại phương án đổi chỗ các kí tự ở trong xâu thứ nhất để trở thành 
+xâu thứ hai được hay không?
+
+Input:
+abcd
+badc
+
+Ouput:
+1
+
+Input Format
+Dòng đầu tiên là xâu ký tự thứ nhất
+Dòng thứ 2 là xâu ký tự thứ hai
+
+Constraints
+-
+
+Output Format
+Kết quả đầu ra là 1 hoặc 0:
+Nếu tồn tại phương án đổi chỗ, hãy trả về giá trị 1.
+Nếu không tồn tại, trả về giá trị 0.
+
+Sample Input 0
+abcd
+cbad
+
+Sample Output 0
+1
+
+Explanation 0
+Vì chuỗi "abcd" có phương án đổi chỗ các kí tự để trở thành "cbad".
+
+Sample Input 1
+ab
+bc
+
+Sample Output 1
+0
+
+Explanation 1
+Vì chuỗi "ab" không có phương án đổi chỗ các kí tự để trở thành "bc".

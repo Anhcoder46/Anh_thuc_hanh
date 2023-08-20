@@ -1,0 +1,39 @@
+Cho mảng a chứa các số nguyên Xây dựng mảng b là prefix của mảng a cụ thể theo công thức:
+b[0]   = a[0]
+b[1]   = a[0] + a[1]
+b[2]   = a[0] + a[1] + a[2]
+...
+b[n - 1] = a[0] + a[1] + ... + a[n - 1]
+với n là độ dài của mảng a.
+Input Format
+1 chuỗi chứa dãy số nguyên, mỗi số cách nhau bởi 1 dấu cách
+
+Constraints
+Số lượng ký tự trong chuỗi là n: 1 < n < 100
+
+Output Format
+1 mảng số nguyên
+
+Sample Input 0
+1 2 3
+
+Sample Output 0
+1 3 6
+
+Explanation 
+Phần tử đầu tiên là arr[0] = 1
+Phần tử tiếp bằng arr[0] + arr[1] = 1 + 2 = 3
+Phần tử cuối bằng arr[0] + arr[1] + arr[2] = 1 + 2 + 3 = 6
+
+Sample Input 1
+1 2 3 4 0
+
+Sample Output 1
+1 3 6 10 10
+
+Explanation 1
+Phần tử đầu tiên là arr[0] = 1
+Phần tử thứ 2 bằng arr[0] + arr[1] = 1 + 2 = 3
+Phần tử thứ 3 bằng arr[0] + arr[1] + arr[2] = 1 + 2 + 3 = 6
+Phần tử thứ 4 bằng arr[0] + arr[1] + arr[2] + arr[3] = 1 + 2 + 3 + 4 = 10
+Phần tử thứ 5 bằng arr[0] + arr[1] + arr[2] + arr[3] + arr[4] = 1 + 2 + 3 + 4 + 0 = 10

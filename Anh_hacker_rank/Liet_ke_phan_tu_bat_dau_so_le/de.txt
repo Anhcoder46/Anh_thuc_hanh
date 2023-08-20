@@ -1,0 +1,29 @@
+Hãy liệt kê các giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là chữ số lẻ.
+Nếu không có giá trị nào thì trả về -1
+
+Input Format
+1 chuỗi chứa dãy số nguyên, mỗi số cách nhau bởi 1 dấu cách
+
+Constraints
+1 chuỗi chứa dãy số nguyên, mỗi số cách nhau bởi 1 dấu cách
+
+Output Format
+1 mảng số nguyên gồm các phần tử có chữ số đầu tiên là chữ số lẻ
+
+Sample Input 0
+13 4456 723424 234234 534234
+
+Sample Output 0
+13 723424 534234
+
+Explanation 0
+Các số 13 723424 534234 đều có chữ số đầu tiên là số lẻ: 1, 7, 5
+
+Sample Input 1
+22343534 42312312 6235345
+
+Sample Output 1
+-1
+
+Explanation 1
+Không có số nào có chữ số đầu tiên là số lẻ

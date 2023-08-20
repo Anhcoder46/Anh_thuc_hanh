@@ -1,0 +1,30 @@
+Một lớp học gồm  bạn, các bạn được đánh số thứ tự từ  đến  để tham gia một trò chơi như sau: 
+Ban đầu, bạn thứ j(j=1,2,...,n) sẽ ghi nhớ số j. Sẽ có k lượt, mỗi lượt, 
+mỗi bạn sẽ ghi nhớ một số mới là bình thương số mình đang ghi nhớ. 
+Kết thúc k lượt, các bạn sẽ nói số mà mình đang ghi nhớ cho cô giáo, 
+nếu tất cả các bạn trong lớp đều trả lời đúng cô giáo sẽ có một phần thường cho cả lớp. 
+Trước khi cac bạn trả lời, lớp trưởng muốn kiểm tra sơ bộ bằng cách tìm chữ số hàng đơn vị của số s,
+trong đó S là tổng của tất cả các số mà bạn đang ghi nhớ.
+
+Yêu cầu: Cho k, n, hãy tìm chữ số hàng đơn vị của số S, trong đó S là tổng tất cả các số mà các bạn đang ghi nhớ sau k lượt.
+
+Input Format
+
+Hai số nguyên dương k, n
+Constraints
+
+-
+Output Format
+Một chữ số là chữ số hàng đơn vị của số S
+
+Sample Input 0
+1
+3
+
+Sample Output 0
+4
+
+Explanation 0
+Các số ban đầu các bạn ghi nhớ là: 1, 2, 3
+Các số ban đầu các bạn ghi nhớ sau lượt 1 là: 1, 4, 9
+Tổng số các bạn đang ghi nhớ là 14. Hàng đơn vị của số này là 4.
