@@ -1,0 +1,73 @@
+Alice và Bob mỗi người tạo ra một vấn đề cho HackerRank. Người đánh giá đánh giá hai thử thách, cho điểm theo thang điểm từ 1 đến 100 cho ba loại: tính rõ ràng của vấn đề , tính độc đáo và độ khó .
+
+Xếp hạng cho thử thách của Alice là bộ ba a = (a[0], a[1], a[2]) và xếp hạng cho thử thách của Bob là bộ ba b = (b[0], b[1], b [2]) .
+
+Nhiệm vụ là tìm điểm so sánh của chúng bằng cách so sánh a[0] với b[0] , a[1] với b[1] và a[2] với b[2] .
+
+Nếu a[i] > b[i] thì Alice được thưởng 1 điểm.
+Nếu a[i] < b[i] , thì Bob được thưởng 1 điểm.
+Nếu a[i] = b[i] thì không ai nhận được điểm.
+Điểm so sánh là tổng số điểm mà một người kiếm được.
+
+Cho a và b , xác định điểm so sánh tương ứng của chúng.
+
+Ví dụ
+
+a = [1, 2, 3]
+b = [3, 2, 1]
+Đối với các phần tử *0*, Bob được thưởng một điểm vì a[0] .
+Đối với các phần tử bằng nhau a[1] và b[1] , không kiếm được điểm nào.
+Cuối cùng, đối với các phần tử 2 , a[2] > b[2] nên Alice nhận được một điểm.
+Mảng trả về là [1, 1] với điểm đầu tiên của Alice và điểm thứ hai của Bob.
+
+Mô tả chức năng
+
+Hoàn thành hàm so sánhTriplets trong trình chỉnh sửa bên dưới.
+
+so sánhTriplets có (các) tham số sau:
+
+int a[3] : Xếp hạng thử thách của Alice
+int b[3] : Xếp hạng thử thách của Bob
+Trở lại
+
+int[2] : Điểm của Alice ở vị trí đầu tiên và điểm của Bob ở vị trí thứ hai.
+Định dạng đầu vào
+
+Dòng đầu tiên chứa 3 số nguyên được phân tách bằng dấu cách, a[0] , a[1] và a[2] , các giá trị tương ứng trong bộ ba a .
+Dòng thứ hai chứa 3 số nguyên được phân tách bằng dấu cách, b[0] , b[1] và b[2] , các giá trị tương ứng trong bộ ba b .
+
+Hạn chế
+
+1 ≤ a[i] ≤ 100
+1 ≤ b[i] ≤ 100
+Đầu vào mẫu 0
+
+5 6 7 
+3 6 10
+Đầu ra mẫu 0
+
+1 1
+Giải thích 0
+
+Trong ví dụ này:
+a = (a[0], a[1], a[2]) = (5,6,7)
+b = (b[0], b[1], b[2]) = (3,6,10)
+Bây giờ, hãy so sánh từng điểm số riêng lẻ:
+
+a[0] > b[0], vậy là Alice nhận đượcđiểm.
+a[1] = b[1], nên không ai nhận được điểm.
+a[2] < b[2], nên Bob nhận đượcđiểm.
+Điểm so sánh của Alice là, và điểm so sánh của Bob là. Vì vậy, chúng tôi trả về mảng [1,1].
+
+Đầu vào mẫu 1
+
+17 28 30 
+99 16 8
+Đầu ra mẫu 1
+
+2 1
+Giải thích 1
+
+So sánh các 0th các yếu tố, 17 < 99 thế là Bob nhận được một điểm.
+So sánh các 1st Và 2nd các yếu tố,28 > 16 Và 30 > 8 vì vậy Alice nhận được hai điểm.
+Mảng trả về là [2,1].

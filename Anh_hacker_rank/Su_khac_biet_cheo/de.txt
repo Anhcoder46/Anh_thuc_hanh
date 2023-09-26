@@ -1,0 +1,58 @@
+Cho một ma trận vuông, tính hiệu tuyệt đối giữa tổng các đường chéo của nó.
+
+Ví dụ: ma trận vuôngđược hiển thị dưới đây:
+
+1 2 3
+4 5 6
+9 8 9  
+Đường chéo từ trái sang phải = 1 + 5 + 9= 15. Đường chéo từ phải sang trái = 3 + 5 + 9 =17. 
+Sự khác biệt tuyệt đối của họ là.
+|15 - 17| = 2
+Mô tả chức năng
+
+Hoàn thành việcchức năng trong trình chỉnh sửa bên dưới.
+
+chéoDifference nhận tham số sau:
+
+int arr[n][m] : một mảng các số nguyên
+Trở lại
+
+int : chênh lệch đường chéo tuyệt đối
+Định dạng đầu vào
+
+Dòng đầu tiên chứa một số nguyên duy nhất,, số hàng và số cột trong ma trận vuông.
+Mỗi cái tiếp theodòng mô tả một hàng,arr[i], và bao gồmsố nguyên cách nhau bằng dấu cách arr[i][j].
+
+Hạn chế
+-100 <= arr[i][j] <= 100
+Định dạng đầu ra
+
+Trả về chênh lệch tuyệt đối giữa tổng hai đường chéo của ma trận dưới dạng một số nguyên.
+
+Đầu vào mẫu
+
+3
+11 2 4
+4 5 6
+10 8 -12
+Đầu ra mẫu
+
+15
+Giải trình
+
+Đường chéo chính là:
+
+11
+   5
+     -12
+Tổng theo đường chéo chính: 11 + 5 - 12 = 4
+
+Đường chéo phụ là:
+
+     4
+   5
+10
+Tổng trên đường chéo phụ: 4 + 5 + 10 = 19
+Hiệu: |4 - 19| = 15
+
+Lưu ý: |x| là giá trị tuyệt đối của x

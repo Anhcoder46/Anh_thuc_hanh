@@ -11,6 +11,6 @@ int main() {
 		sum += temp % 10;
 		temp /= 10;
 	}
-	cout << "Tong cac chu so la: " << sum << endl;
+	cout << sum << endl;
 	return 0;
 }

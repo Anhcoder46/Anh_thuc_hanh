@@ -1,0 +1,40 @@
+Trong thử thách này, bạn phải tính và in tổng các phần tử trong một mảng, 
+hãy nhớ rằng một số số nguyên đó có thể khá lớn.
+
+Mô tả chức năng
+
+Hoàn thành hàm a VeryBigSum trong trình chỉnh sửa bên dưới. 
+Nó phải trả về tổng của tất cả các phần tử mảng.
+
+a VeryBigSum có (các) tham số sau:
+
+int ar[n] : mảng các số nguyên.
+Trở lại
+
+long : tổng của tất cả các phần tử mảng
+Định dạng đầu vào
+
+Dòng đầu tiên của dữ liệu đầu vào bao gồm một số nguyên.
+Dòng tiếp theo chứacác số nguyên được phân tách bằng dấu cách có trong mảng.
+
+Định dạng đầu ra
+
+Trả về tổng số nguyên của các phần tử trong mảng.
+
+Hạn chế
+1 <= n <= 10
+0 <= ar[i] <= 10^10
+
+Đầu vào mẫu
+
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+đầu ra
+
+5000000015
+Ghi chú:
+
+Phạm vi của số nguyên 32 bit là.
+(-2^31) to (2^31 - 1) or [-2147483648, 2147483647].
+Khi chúng ta cộng một số giá trị số nguyên, tổng thu được có thể vượt quá phạm vi trên. 
+Bạn có thể cần sử dụng long int C/C++/Java để lưu trữ các khoản tiền như vậy.

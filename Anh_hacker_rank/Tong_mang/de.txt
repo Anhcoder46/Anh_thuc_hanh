@@ -1,0 +1,34 @@
+Cho một mảng các số nguyên, tìm tổng các phần tử của nó.
+
+Ví dụ, nếu mảng ar=[1,2,3], 1+2+3=6, vậy hãy quay lại6.
+
+Mô tả chức năng
+
+Hoàn thành hàm simpleArraySum trong trình chỉnh sửa bên dưới. Nó phải trả về tổng của các phần tử mảng dưới dạng số nguyên.
+
+simpleArraySum có (các) tham số sau:
+
+ar : mảng số nguyên
+Định dạng đầu vào
+
+Dòng đầu tiên chứa một số nguyên,, biểu thị kích thước của mảng.
+Dòng thứ hai chứacác số nguyên được phân tách bằng dấu cách biểu thị các phần tử của mảng.
+
+Hạn chế
+0<n, ar[i] <= 1000
+
+Định dạng đầu ra
+
+In tổng các phần tử của mảng dưới dạng một số nguyên.
+
+Đầu vào mẫu
+
+6
+1 2 3 4 10 11
+Đầu ra mẫu
+
+31
+Giải trình
+
+Chúng tôi in tổng các phần tử của mảng:
+1+2+3+4+10+11 = 31.
