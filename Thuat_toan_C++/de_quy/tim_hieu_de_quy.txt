@@ -1,0 +1,43 @@
+Hàm đệ quy là gì? Hoạt động ra sao?
+Trong bài này mình sẽ giới thiệu đến các bạn hàm đệ quy, đây là một hàm rất 
+căn bản và được sử dụng rất nhiều trong lập trình.
+
+Chúng ta sẽ cùng nhau tìm hiểu về hàm đệ quy là gì? Cơ chế hoạt động của nó như thế nào?
+ Và làm một vài ví dụ biểu diễn trong ngôn ngữ lập trình C++.
+
+1. Hàm đệ quy là gì?
+
+Một hàm được gọi là hàm đệ quy nếu trong thân hàm có một hoặc nhiều lệnh gọi đến chính hàm đó.
+
+Đệ quy giúp giải quyết bài toán theo cách nghĩ thông thường một cách tự nhiên.
+
+Bài viết này được đăng tại [free tuts .net]
+
+Đệ quy cũng tương tự như các vòng lặp, nó phải xác định được điểm dừng. 
+Nếu không xác định chính xác điểm dừng, bài toán có thể lặp vĩnh cửu (Stack Overhead).
+
+Ví dụ: Chúng ta có định nghĩa giai thừa của một số nguyên dương n như sau:
+
+5! = 5 * 4!
+4! = 4 * 3!
+…
+1! = 1 * 0!
+Theo quy luật ở trên, nếu ta biết được (n-1) giai thừa thì ta sẽ tính được n giai thừa: n! = n * (n-1)!
+
+Ta thấy n = 0 hoặc n = 1 thì giai thừa luôn bằng 1, vì vậy đây chính là điểm dừng.
+
+Công thức tổng quát của n! như sau:
+
+n! = 1 * 2 * 3 *…* (n-1) * n = (n-1)! * n với (0! = 1).
+Áp dụng công thức trên, ta có thể viết một hàm tính giai thừa của một số nguyên dương n trong C++.
+
+1
+2
+3
+4
+Int giaiThua(int n){
+    If(n<=1) return 1;
+    return n * giaiThua(n-1);
+}
+
+Điểm dừng của hàm đệ quy trên chính là n <= 1.

@@ -1,0 +1,69 @@
+Bắt đầu con đường lập trình đầy thử thách bằng ngôn ngữ C++ là một lựa chọn thật sáng suốt. 
+C++ là một ngôn ngữ cực kỳ hữu dụng và đa năng trong thời đại ngày nay. 
+Nó được thể hiện ở rất nhiều mảng xoay xung quanh các vấn đề về cấu trúc dữ liệu và tối ưu code.
+ Sự đa năng không ngừng ở đó. Sự cần thiết của C++ còn được thể hiện ở mảng lập trình ứng dụng và web. 
+Quan trọng và cấp thiết là thế, điều quan trọng bạn phải là người nắm bắt kỹ hơn về những vấn đề cơ bản đó. 
+Chính vì thế hôm nay, toilacoder  xin được chia sẻ bộ tài liệu C++ cơ bản dành đến bạn.
+
+C++ là gì? 
+Ứng dụng trên rất nhiều mảng và khía cạnh của chuyên ngành CNTT.
+ C++ dường như đã có mặt ở khắp các nơi chứa dữ liệu. 
+Là một người lập trình mới bước chân vào nghề, chắc hẳn bạn cũng đã từng một lần nghe qua về C++. 
+Đây là một ngôn ngữ lập trình “căn cơ” nhất trong tất cả các ngôn ngữ lập trình khác.
+ Căn cơ bởi vì nó là ngôn ngữ dành cho sự khởi đầu. Chính bạn đang là người cần C++ định hướng.
+ Và thật tuyệt vời khi bạn đang ở đây và đọc bài viết này!
+
+Why Are Most Games Coded in C++?
+
+Tài liệu C++ cơ bản
+C++ là một ngôn ngữ lập trình cực kỳ hiện đại, thông minh và hết sức toàn diện. 
+Không hề quá khó học như bạn nghĩ, C++ là một ngôn ngữ bậc trung rất dễ tiếp thu. 
+Được định nghĩa là một ngôn ngữ hiện đại, định hướng đến đối tượng đa dụng.
+Bạn hoàn toàn có thể dùng C++ để làm chủ nhiều mảng miếng lập trình khác nhau. 
+Cũng có khi C++ được ứng dụng vào mảng phát triển và lập trình game. 
+Cũng có khi C++ lại có thể can thiệp được vào việc viết ra các hệ thống website lớn.
+Nổi tiếng trên thế giới về tính mềm dẻo và toàn năng.
+ C++ còn được đánh giá là ngôn ngữ thông dịch tốt nhất cho tới thời điểm hiện tại. 
+C++ có khả năng tự thích ứng được với các môi trường dữ liệu và hệ điều hành khác nhau.
+Ở bất cứ hệ điều hành ví dụ như Window, IOS hay Android thì dù có chuyển C++ từ đâu sang đâu.  
+Nó cũng tự có thể thông dịch ngôn ngữ theo đúng hệ điều hành đó.
+
+Một số lưu ý khi bắt đầu học C++
+Chạy thử code
+Khi mới bắt đầu học C++ các bạn sẽ có rất nhiều các đoạn code để hướng dẫn cũng như
+để tham khảo cho người mới bắt đầu. Các bạn đừng chỉ đọc và để đấy, chúng ta cần chạy thử cả đoạn code đó. 
+Nói vậy không có nghĩa là các bạn copy rồi paste vào rồi nhấn F5, Bạn nên tự mình gõ 
+từng đoạn code đó vào chương trình biên dịch. Khi bạn tự thực hành và 
+viết từng dòng code sẽ giúp bạn chú ý đến các chi tiết cú pháp của ngôn ngữ, 
+nhờ đó mà bạn sẽ nhớ nhanh và hiểu sâu mỗi câu lệnh.
+
+Cố gắng tự viết code ngay từ đầu
+Điều này đối với các bạn lập trình viên mới học và chưa có kinh nghiệm thì khá là khó và mất nhiều thời gian.
+ Tuy nhiên việc này sẽ giúp bạn có được những bài học thực sự hữu ích, 
+nâng cao khả năng tư duy lập trình nhanh chóng và tiếp thu kiến thức mới cực kì hiệu quả.
+ Nếu bạn có một ý tưởng lớn với số lượng lớn code cần viết, hay chia nhỏ project thành nhiều 
+tính năng để làm dần dần. Thất bại ban đầu là không tránh khỏi, nhưng với sự kiên trì bền 
+bỉ thì thành công sẽ ngoài sức tưởng tưởng của bạn luôn đó!
+
+Sử dụng công cụ Debug
+Ban đầu khi sử dụng Debug có thể sẽ làm bạn mất khá nhiều thời gian sửa lỗi chương trình,
+ vì đây là công cũ chỉ ra cho bạn chạy sai dòng nào đó hay lỗi nào đó. 
+Nó cho bạn theo dõi giá trị của các biến và các thay đổi của chúng qua từng dòng code của chương trình, 
+giúp bạn hiểu hơn về chương trình của mình. Vậy nên khi thông thạo và nắm chắc kiến thức 
+về debug thì đây sẽ là trợ thủ đắc lực cho bạn.
+
+Vì Sao Tôi Chọn C++ Là Ngôn Ngữ Lập Trình Chính
+
+Cơ hội việc làm và mức lương của lập trình viên C++
+Cơ hội việc làm và mức lương luôn là một yếu tố quan trọng được rất nhiều bạn trẻ theo học lập trình quan tâm. 
+Hiện nay thị trường việc làm của ngành CNTT đang rất rộng mở, sự thiếu hụt nhân sự khiến cho 
+ngành này càng ngày càng hot và có mức thu nhập vô cùng hấp dẫn. 
+Có 3 hướng đi khi học C++ mà mình thấy đã có khá nhiều bạn lựa chọn đó là: 
+Làm lập trình viên, Tester hoặc Freelancer. Ngoài ra, lập trình viên C++ còn có cơ hội tham gia 
+vào thị trường công nghệ cao, tiêu biểu là trong lĩnh vực Automotive – ngành ô tô tự 
+động hóa – ngành công nghệ đang ngày càng nóng với sự tham gia của các tập đoàn công nghệ hàng đầu thế giới.
+
+Lập trình viên C++ có kinh nghiệm từ 2 đến 5 năm có mức lương trung bình 937 USD một tháng, 
+lập trình viên kinh nghiệm 5-7 năm đạt mức lương 1765 USD một tháng. Đây là số liệu thống kê
+ do VietnamWorks công bố vào năm 2019, tính đến nay thì đây cũng là một
+ mức thu nhập khá “hậu hĩnh” trong ngành lập trình.

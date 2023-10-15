@@ -1,0 +1,23 @@
+Bài tập kiểm tra số nguyên tố bằng Stack
+Trong hướng dẫn này mình sẽ thực hiện một chương trình nhập một dãy các số nguyên 
+vào Stack sau đó thực hiện xuất các số nguyên tố ra màn hình. 
+Đây là một bài tập khá đơn giản nhưng rất phổ biến trong lập trình.
+
+Chúng ta sẽ cùng nhau tạo một cấu trúc Stack với danh sách liên kết, 
+sau đó thực hiện xuất các số nguyên tố trong Stack ra màn hình.
+
+1. Gợi ý cách thực hiện
+Trong chương trình này ta sẽ thực hiện nhập vào một dãy số nguyên sau đó lưu vào Stack, 
+vậy nên việc đầu tiên ta cần tạo cấu trúc Stack. 
+Trong hướng dẫn này mình sẽ sử dụng danh sách liên kết để cài đặt Stack, vì vậy ta cần tạo thêm cấu trúc Node.
+
+Để có thể thêm, lấy các phần tử trong Stack thì ta cần tạo thêm các hàm cơ bản trong Stack như:
+
+Hàm isEmpty.
+Hàm Push.
+Hàm Pop.
+Khi này ta sẽ bắt đầu thực hiện tạo các hàm liên quan đến việc xuất các số nguyên tố trong Stack ra màn hình:
+
+Hàm getData() lấy dữ liệu từ người dùng sau đó đưa nó vào Stack
+Hàm ktSoNT() để kiểm tra các số trong Stack có phải là số nguyên tố hay không.
+Hàm XuatSoNguyenTo() để xuất các số nguyên tố ra màn hình.

@@ -1,0 +1,27 @@
+Tìm các số chẵn lẻ bằng Queue và Stack
+Trong hướng dẫn này mình sẽ viết một chương trình sử dụng Queue và Stack để lưu trữ 
+các dữ liệu nhập vào từ bàn phím. Đây là một bài tập áp dụng các hàm cơ bản trong Queue và Stack
+Để làm được bài này các bạn cần có kiến thức về cấu trúc Queue và Stack, 
+các bạn có thể xem lại các bài trước mình đã hướng dẫn.
+
+1. Đề bài và gợi ý cách thực hiện
+Trong phần này chúng ta sẽ cùng nhau tìm hiểu để bài toán và gợi ý cách thực hiện bài toán như thế nào nhé.
+
+Đề bài
+Thực hiện một chương trình nhận dữ liệu từ bàn phím. 
+Tạo cấu trúc Queue và Stack sau đó thêm các phần tử là số chẵn vào ngăn xếp Stack 
+và các phần tử số lẻ vào hàng đợi Queue. Hiển thị danh sách ngăn xếp và hàng đợi ra màn hình.
+
+Gợi ý cách thực hiện
+Trong bài toán này ta cần hai cấu trúc lưu trữ là Queue và Stack, 
+vậy nên ta sẽ tạo cấu trúc và các hàm cơ bản của nó.
+
+Cấu trúc dữ liệu của Queue và Stack (danh sách kiên kết hoặc mảng một chiều).
+Hàm Push: thêm phần tử vào Stack.
+Hàm Pop: xóa phần tử khỏi Stack.
+Hàm PushQ: thêm phần tử vào Queue.
+Hàm PopQ: xóa phần tử khỏi Queue.
+Hàm Input: thêm phần tử chẵn vào Stack và phần tử lẻ vào Queue.
+Hàm Print: hiển thị danh sách Queue và Stack ra màn hình.
+Trên đây là các hàm cần thiết cho bài toán, chúng ta không nên tạo các hàm không sử dụng trong bài toán, 
+vì như vậy sẽ tốn thời gian và bộ nhớ.

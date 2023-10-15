@@ -1,0 +1,27 @@
+Bài tập chuyển đổi cơ số bằng Stack
+Trong hướng dẫn này mình sẽ thực hiện giải một bài toán chuyển đổi cơ số áp dụng Stack. 
+Đây là một bài toán rất phổ biến trong lập trình, để làm được bài này các bạn cần nắm rõ 
+quy tắc chuyển đổi giữa các cơ số.
+Chúng ta sẽ cùng nhau thực hiện một chương trình đổi cơ số thập phân sang cơ 
+số nhị phân (2), bát phân (8) và thập lục phân (16).
+
+1. Gợi ý cách thực hiện
+Để giải được bài toán, điều đầu tiên các bạn phải biết được số thập phân, nhị phân,
+bát phân, thập lục phân là gì? và cách chuyển đổi giữa các cơ chế này ra sao thì các bạn mới có thể làm được. 
+Nếu các bạn chưa từng nghe các cơ số này thì có thể tham khảo trên google. 
+Dưới đây mình sẽ hướng dẫn chi tiết cách chuyển đổi từ cơ số 10 sang cơ số 2, còn lại các cơ số khác tương tự nhé.
+
+Hệ nhị phân là một hệ đếm dùng hai kí tự 0 và 1 để biểu đạt một số.
+Bài viết này được đăng tại [free tuts .net]
+Ví dụ: ta có một số nguyên 10 là số thập phân, khi chuyển sang số nhị phân sẽ là 1010.
+Vậy làm sao nó có thể chuyển được như vậy, đơn giản chỉ là lấy số thập phân đó và chia lấy dư cho 2, 
+khi đó các con số phần dư được lấy ngược từ dưới lên chính là hệ nhị phân.
+stack he nhi phan PNG
+
+Như các bạn đã biết thì Stack hoạt động theo quy tắc LIFO (last in first out), 
+vậy tại sao chúng ta không sử dụng Stack vào bài toán này, 
+thay vì ta lưu các số này vào mảng ta chỉ cần lưu nó vào Stack rồi lấy nó ra theo quy tắc LIFO là xong.
+
+Cứ mỗi lần chia lấy dư như vậy ta sẽ lưu vào Stack, cho đến khi số chia bằng 0 thì ta thực hiện lấy 
+phần tử đầu (top) trong Stack ra, như vậy dãy số được lấy ra chính là dãy nhị phân.
+Tương tự như vậy, để chuyển sang cơ số 8 và 16 ta cũng thực hiện chia lấy dư.

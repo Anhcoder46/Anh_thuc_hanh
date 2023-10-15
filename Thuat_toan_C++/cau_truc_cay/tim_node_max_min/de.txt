@@ -1,0 +1,79 @@
+Tìm Node MAX và MIN trong cây nhị phân như thế nào?
+Tìm Node MAX và MIN trong cây nhị phân tìm kiếm
+Trong hướng dẫn này mình sẽ giới thiệu các bạn cách tìm giá trị MAX và MIN trong cây nhị phân tìm kiếm. 
+Đối với cây nhị phân tìm kiếm thì việc tìm ra giá trị lớn nhất và nhỏ nhất trong cây rất đơn giản.
+
+Chúng ta sẽ thực hiện một vài cách tìm ra giá trị MAX và MIN để xem cách nào tối ưu nhất. 
+Để làm được các bạn cần có kiến thức cơ bản về C++ và các nẵm vững cấu trúc dữ liệu cây.
+
+1. Tìm giá trị MAX trong cây nhị phân tìm kiếm
+Trong phần này mình sẽ thực hiện hai cách để tìm ra giá trị MAX trong cây nhị phân tìm kiếm. 
+Các bạn hãy theo dõi và xem thử cách nào tối ưu nhất nhé.
+
+Cách 1:
+Trong cách này mình sẽ sử dụng biến toàn cục INT_MIN để giá cho biến MAX, 
+sau đó so sánh với các Node trong cây để tìm ra giá trị lớn nhất, cụ thể như sau:
+
+Ta sẽ sử dụng giá trị nhỏ nhất của kiểu integer và gán cho biến MAX, 
+sau đó ta xét điều kiện nếu cây tồn tại phần tử thì ta thực hiện so sánh MAX với t -> data. 
+Nếu MAX < t -> data thì ta cập nhật lại biến MAX, ngược lại ta sẽ đệ quy để duyệt sang trái và sang phải.
+
+Tuy nhiên đây là một cách không tối ưu, vì chúng ta cần phải duyệt từ đầu đến cuối cây. 
+Vì vậy các bạn hãy xem cách hai mình thực hiện, sẽ nhanh hơn rất nhiều nhé.
+
+Cách 2
+Như các bạn đã học thì cây nhị phân tìm kiếm có một cấu trúc lưu trữ dữ liệu rất đặc biệt, 
+vì vậy ta sẽ dựa vào đó để thực hiện tìm ra giá trị MAX một cách nhanh nhất có thể.
+
+Cây nhị phân tìm kiếm luôn luôn lưu giá trị nhỏ hơn ở cây con trái và giá trị lớn hơn ở cây con phải, 
+vì vậy thay vì ta duyệt hết cả cây, ta chỉ cần duyệt sang cây con phải là có thể tìm ra giá trị MAX được rồi.
+
+Các bạn hãy chú ý rằng giá trị ngoài cùng của cây con trái luôn luôn là giá trị nhỏ nhất và giá trị 
+ngoài cùng của cây con phải luôn luôn là giá trị lớn nhất. Dựa vào điều này ta cho hàm duyệt sang bên cây 
+con phải đến giá trị ngoài cùng nhất, khi đó giá trị MAX chính là t -> data của Node ngoài cùng.
+
+//hàm tìm giá trị MIN
+int TimMin(TREE t)
+{
+    // CÁCH TỐI ƯU NHẤT
+    // nếu node cha mà không tồn cây con trái - thì node cha này chính là node ngoài cùng nhất
+ của cây con trái - cũng chính là node có giá trị nhỏ nhất
+
+    if (t->pLeft == NULL)
+    {
+        return t->data;
+    }
+    return TimMin(t->pLeft); // duyệt đến node cuối cùng nhất bên cây con trái ==> để tìm giá trị nhỏ nhất
+}
+
+2. Tìm giá trị MIN trong cây nhị phần tìm kiếm
+Tương tự như tìm giá trị MAX trong cây nhị phân tìm kiếm, việc tìm giá trị MIN chỉ đơn 
+giản là ta duyệt sang cây con trái, vì cây con trái luôn chứa giá trị nhỏ hơn Node cha. 
+Như mình đã nói ở trên thì Node ngoài cùng bên trái luôn luôn là Node nhỏ nhất, 
+vậy nên chỉ cần duyệt sang trái đến Node cuối cùng nhất thì đó chính là giá trị MIN.
+
+int TimMax(TREE t)
+{
+    if (t->pRight == NULL)
+    {
+        return t->data;
+    }
+    return TimMax(t->pRight);
+}
+
+3. Ví dụ: Tìm giá trị MAX, MIN trong cây nhị phân tìm kiếm
+Trong ví dụ này mình sẽ thực hiện nhập vào một dãy các số nguyên sau đó in ra số có giá
+trị lớn nhất và nhỏ nhất. Để làm được bài toán này ta cần có các hàm sau:
+
+Cấu trúc dữ liệu của cây và Node.
+Hàm thêm Node vào cây.
+Hàm duyệt cây (chỉ cần một trong 6 hàm duyệt).
+Hàm tìm MAX.
+Hàm tìm MIN.
+Hàm menu để hiển thị.
+4. Kết luận
+Như vậy là chúng ta tìm hiểu xong cách tìm giá trị MAX và MIN trong cây nhị phân tìm kiếm. 
+Đây là một trong các thao tác đặc biệt trong cây nhị phân tìm kiếm, vì nó sinh ra để làm điều này. 
+Trên đây là một số cách mà mình thực hiện, các bạn có thể thực hiện theo các cách khác nhau để
+ tìm ta cách tối ưu nhất. Ở bài tiếp theo mình sẽ hướng dẫn các bạn cách xóa Node khỏi cây nhị phân tìm kiếm, 
+các bạn nhớ chú ý theo dõi nhé !!!
