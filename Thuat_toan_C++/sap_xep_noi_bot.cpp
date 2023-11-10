@@ -29,7 +29,7 @@ void bubbleSort(int arr[], int n) {
 /* Hàm xuất mảng */
 void printArray(int arr[], int size) {
     int i;
-    for (i = 0; i < size; i++){
+    for (i = 0; i < size; i++) {
         cout << arr[i];
         cout << "\t";
       }
@@ -42,7 +42,7 @@ int main() {
         cin >> n;
     } while(n <= 0);
     int a[n];
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++) {
         cout << "a[" << i << "]=";
        	cin >> a[i];
     };
@@ -51,3 +51,41 @@ int main() {
     printArray(a, n);
 	return 0;
 }
+/* #include <iostream>
+using namespace std;
+
+void PrintArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+void BubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        bool haveSwap = false;
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);
+                haveSwap = true; 
+            }
+        }
+
+        if (haveSwap == false) {
+            break;
+        }
+    }
+}
+
+int main() {
+    int a[10000];
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    BubbleSort(a, n);
+    PrintArray(a, n);
+    return 0;
+}
+*/
