@@ -1,0 +1,3 @@
+D:/Anh_thuc_hanh/code_tren_lop/cmake-build-debug/CMakeFiles/code_tren_lop.dir
+D:/Anh_thuc_hanh/code_tren_lop/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Anh_thuc_hanh/code_tren_lop/cmake-build-debug/CMakeFiles/rebuild_cache.dir
