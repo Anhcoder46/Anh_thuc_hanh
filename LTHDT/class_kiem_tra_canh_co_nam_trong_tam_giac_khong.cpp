@@ -68,5 +68,4 @@ int main() {
     return 0; // trả về 0 và kết thúc chương trình
 }
 
-
 /* 1 bài làm mất 6h, bn báo quá, mà công nhận bài này hơi ... (Đơnnn gioảng) kkk*/

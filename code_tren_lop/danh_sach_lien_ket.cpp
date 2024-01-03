@@ -84,13 +84,13 @@ node* maxL(node* list) {
 }
 
 int main() {
-	node* list=NULL;
+	node* list = NULL;
 	initL(list);
 	inputL(list);
 	//in ra dslk
 	outputL(list);
 	//tính tổng phần tử trong dslk
-	cout<<endl<<"S= "<<sumL(list)<<endl;
+	cout << endl << "S = " << sumL(list) << endl;
 	// Tim Min, max phan tu trong dslk
 	cout << "Min = " << minL(list)->data << endl;
    	cout << "Max = " << maxL(list)->data << endl;
