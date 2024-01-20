@@ -1,4 +1,4 @@
-#include<iostream>
+1#include<iostream>
 using namespace std;
 // Tìm kiếm tuyến tính (Linear search): Kiểm tra từng phần tử trong danh sách cho đến khi tìm thấy kết quả hoặc hết danh sách.
 
