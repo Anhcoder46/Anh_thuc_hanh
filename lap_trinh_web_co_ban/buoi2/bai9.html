@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: green;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            align-items: center;
+            transition: .5s;
+        }
+
+        .navbar {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            margin-right: 8.5rem;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            color: green;
+            background-color: lightgreen;
+        }
+
+        h2 {
+            background: darkgray;
+            margin-top: 70px; /* Khoảng trắng */
+            padding: 10px;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background-color: lightgreen;
+        }
+
+        .navbar:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#html">HTML</a>
+        <div class="sub-menu">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+        <a href="#services">CSS</a>
+        <a href="#js">JS</a>
+        <a href="#php">PHP</a>
+        <a href="#help">Help</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<h2>Thiết kế menu ngang cấp 2</h2>
+</body>
+</html>

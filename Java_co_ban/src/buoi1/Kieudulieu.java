@@ -66,7 +66,7 @@ public class Kieudulieu {
 
         Cho a = 5
         b = a-- + ++a + a++; a = ?, b = ?;
-        b = 4 + 5 + 6 = 15 => a = 6, b = 15;
+        b = 5 + 5 + 5 = 15 => a = 5, b = 15;
         */
     }
 }

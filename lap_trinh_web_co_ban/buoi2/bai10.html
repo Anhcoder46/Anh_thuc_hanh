@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu dọc 2 cấp</title>
+    <style>
+        nav {
+            background-color: blue;
+            color: #ffffff;
+            padding: 0 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: block;
+            padding: 10px 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-item {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 100px;
+            width: 100%;
+            background-color: green;
+            z-index: 100;
+        }
+
+        .sub-menu li {
+            padding: 10px 0;
+        }
+
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li class="menu-item">
+            <a href="#">Chính trị - Xã hội</a>
+            <ul class="sub-menu">
+                <li><a href="#">Thư viện pháp</a></li>
+                <li><a href="#">Nhịp sống trẻ</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+        </li>
+        <li class="menu-item"><a href="#">Thế giới</a></li>
+        <li class="menu-item"><a href="#">Sống khỏe</a></li>
+        <li class="menu-item"><a href="#">Giáo dục</a></li>
+        <li class="menu-item"><a href="#">Kinh tế</a></li>
+    </ul>
+</nav>
+</body>
+</html>
