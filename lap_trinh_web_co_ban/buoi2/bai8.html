@@ -4,84 +4,67 @@
     <meta charset="UTF-8">
     <title>Bài tập 8</title>
     <style>
-        body {
-            font-family: sans-serif;
-            background-color: #fff;
-
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
 
         .container {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
+            width: 900px;
+            margin: 20px auto;
         }
 
         .header {
-            height: 80px;
+            height: 100px;
             background-color: mediumvioletred;
-            color: #fff;
         }
 
         .menu {
-            width: 100%;
             height: 60px;
             background-color: blue;
-            color: #fff;
-            line-height: 50px;
         }
 
-        .left {
-            width: 250px;
-            flex-direction: inherit;
+        .center .left {
+            width: 25%;
+            height: 300px;
             background-color: palegreen;
+            float: left;
         }
 
-        .right {
-            flex-direction: inherit;
-            width: 250px;
+        .center .right {
+            width: 25%;
+            height: 300px;
             background-color: darksalmon;
+            float: left;
         }
 
-        .content {
-            text-align: center;
-            width: 100%;
-            height: calc(100vh - 100px);
-            background-color: yellowgreen;
+        .center .content {
+            width: 50%;
+            height: 300px;
+            background-color: aqua;
+            float: left;
         }
 
         .footer {
             height: 70px;
             background-color: #000;
-            color: #fff;
+            clear: both;
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="header">
-        <h1>Header</h1>
-    </div>
+    <div class="header">Header</div>
 
-    <div class="menu">
-        <h2>Menu</h2>
-    </div>
+    <div class="menu">Menu</div>
 
-    <div class="left">
-        <h2>Left</h2>
+    <div class="center">
+        <div class="left">Left</div>
+        <div class="content">Content</div>
+        <div class="right">Right</div>
     </div>
-
-    <div class="content">
-        <h2>Content</h2>
-    </div>
-
-    <div class="right">
-        <h2>Right</h2>
-    </div>
-
-    <div class="footer">
-        <p>Footer</p>
-    </div>
+    <div class="footer">Footer</div>
 </div>
 </body>
 </html>
