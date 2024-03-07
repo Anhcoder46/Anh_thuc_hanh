@@ -1,26 +1,17 @@
 package buoi4;
 
-import java.util.Scanner;
-
 public class Bai3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number;
-        boolean isPrime = true;
-        do {
-            System.out.print("Nhập vào một số: ");
-            number = scanner.nextInt();
-            if (number <= 1) {
-                isPrime = false;
-            } else {
-                for (int i = 2; i <= Math.sqrt(Math.abs(number)); i++) {
-                    if (number % i == 0) {
-                        isPrime = false;
+        int sum = 0;
+        for (int i = 100; i <= 500; i++) {
+            if (i % 2 != 0 && i != 333) {
+                switch (i % 11) {
+                    case 0:
+                        sum += i;
                         break;
-                    }
                 }
             }
-        } while (!isPrime);
-        System.out.println("Bạn đã nhập vào số nguyên tố " + number + ". Chương trình kết thúc.");
+        }
+        System.out.println("Tổng các số lẻ chia hết cho 11 trong khoảng [100;500] nhưng không cộng số 333 là: " + sum);
     }
 }

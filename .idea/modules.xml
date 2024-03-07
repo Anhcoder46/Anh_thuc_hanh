@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Anh_thuc_hanh.iml" filepath="$PROJECT_DIR$/Anh_thuc_hanh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Do_an_giai_thuat/Do_an_giai_thuat.iml" filepath="$PROJECT_DIR$/Do_an_giai_thuat/Do_an_giai_thuat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_co_ban/Java_co_ban.iml" filepath="$PROJECT_DIR$/Java_co_ban/Java_co_ban.iml" />
+    </modules>
+  </component>
+</project>
