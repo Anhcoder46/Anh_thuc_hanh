@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Bài 9</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-
-        .header {
+        .container {
             background: green;
             position: fixed;
             top: 0;
@@ -24,6 +24,13 @@
         .navbar {
             margin: 0;
             padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            list-style: none;
+            margin-right: 1rem;
+            position: relative;
         }
 
         .navbar a {
@@ -40,19 +47,16 @@
             background-color: lightgreen;
         }
 
-        h2 {
-            background: darkgray;
-            margin-top: 70px; /* Khoảng trắng */
-            padding: 10px;
-        }
-
         .sub-menu {
             display: none;
             position: absolute;
-            background-color: lightgreen;
+            background-color: green;
+            width: 160px;
+            top: 100%;
+            left: 0;
         }
 
-        .navbar:hover .sub-menu {
+        .navbar li:hover .sub-menu {
             display: block;
         }
 
@@ -62,26 +66,35 @@
             padding: 10px;
             text-decoration: none;
         }
+
+        .container {
+            width: 100%;
+            margin: 10px auto;
+        }
     </style>
 </head>
 <body>
-<header class="header">
-    <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#html">HTML</a>
-        <div class="sub-menu">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-        </div>
-        <a href="#services">CSS</a>
-        <a href="#js">JS</a>
-        <a href="#php">PHP</a>
-        <a href="#help">Help</a>
-        <a href="#about">About</a>
-    </nav>
-</header>
-
-<h2>Thiết kế menu ngang cấp 2</h2>
+<div class="container">
+    <div class="menu">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">HTML</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">Descript</a></li>
+                        <li><a href="#">Tag</a></li>
+                        <li><a href="#">Example</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JS</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

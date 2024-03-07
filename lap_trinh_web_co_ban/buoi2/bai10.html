@@ -4,68 +4,94 @@
     <meta charset="UTF-8">
     <title>Menu dọc 2 cấp</title>
     <style>
-        nav {
-            background-color: blue;
-            color: #ffffff;
-            padding: 0 10px;
-        }
-
-        ul {
-            list-style: none;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box	;
         }
 
-        li {
-            display: block;
-            padding: 10px 0;
+        .container {
+            width: 1000px;
+            margin: 10px;
         }
 
-        a {
-            color: white;
-            text-decoration: none;
+        .menu {
+            background: blue;
+            width: 150px;
         }
 
-        .menu-item {
-            cursor: pointer;
+        .menu ul li {
+            list-style: none;
+            border-bottom: 1px solid grey;
             position: relative;
         }
 
-        .sub-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 100px;
-            width: 100%;
-            background-color: green;
-            z-index: 100;
+        .menu ul li:hover {
+            background: red;
         }
 
-        .sub-menu li {
-            padding: 10px 0;
-        }
-
-        .menu-item:hover .sub-menu {
+        .menu ul li:hover .submenu {
             display: block;
+        }
+
+        .menu ul li:hover a {
+            color: black;
+        }
+
+        .menu ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu ul li a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .menu ul li .submenu {
+            position: absolute;
+            background: green;
+            left: 150px;
+            width: 160px;
+            display: none;
+            top: 0;
+        }
+
+        .menu ul li .submenu ul li {
+            border-bottom: 1px dotted grey;
+            border-radius: 0;
+        }
+
+        .menu ul li .submenu ul li a {
+            padding: 10px;
+            text-align: left;
+            display: block;
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
 <body>
-<nav>
-    <ul>
-        <li class="menu-item">
-            <a href="#">Chính trị - Xã hội</a>
-            <ul class="sub-menu">
-                <li><a href="#">Thư viện pháp</a></li>
-                <li><a href="#">Nhịp sống trẻ</a></li>
-                <li><a href="#">Pháp luật</a></li>
-            </ul>
-        </li>
-        <li class="menu-item"><a href="#">Thế giới</a></li>
-        <li class="menu-item"><a href="#">Sống khỏe</a></li>
-        <li class="menu-item"><a href="#">Giáo dục</a></li>
-        <li class="menu-item"><a href="#">Kinh tế</a></li>
-    </ul>
-</nav>
+<div class="container">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">Chính trị - Xã hội</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="#">Thư viện pháp</a></li>
+                        <li><a href="#">Nhịp sống trẻ</a></li>
+                        <li><a href="#">Pháp luật</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Sống khỏe</a></li>
+            <li><a href="#">Giáo dục</a></li>
+            <li><a href="#">Kinh tế</a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
