@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            width: 650px;
+            border: 4px solid saddlebrown;
+        }
+        .container {
+            height: 400px;
+            width: 650px;
+            margin: 20px auto;
+            background: khaki;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<h1>THÊM NHÂN VIÊN MỚI</h1>
+<hr>
+<div class="container">
+    <table>
+        <tr>
+            <td><label for="txtName">Mã nhân viên</label></td>
+            <td><input type="number" name="" size="20" id="txtName"></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label for="txtNames">Họ tên:</label></td>
+            <td><input type="text" name="" size="20" id="txtNames"></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label>Giới tính:</label></td>
+            <td>
+                <input type="radio" name="male" checked>Nam
+                <input type="radio" name="male" checked>Nữ<br>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label for="txtDate">Ngày sinh:</label>
+            <td><input type="date" id="txtDate" name="birthDate"></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label for="txtAddress">Địa chỉ</label></td>
+            <td><input type="text" name="" size="40" id="txtAddress"></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label for="txtPhoto">Hình ảnh</label></td>
+            <td><input type="text" name="" size="" id="txtPhoto">
+                <input style="background: grey" type="button" name="" value="Browse"></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label for="txtWage">Hệ số lương</label></td>
+            <td><input type="number" name="" size="20" id="txtWage"></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label>Phòng ban:</label></td>
+            <td>
+                <select name="money" style ="width:150px">
+                    <option value="age">Kế hoạch - Tài vụ</option>
+                    <option value="age">Tài chính - Kế toán</option>
+                    <option value="age">Kiểm toán - Thu ngân</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><label>Phòng ban:</label></td>
+            <td><select name="money" style ="width:100px">
+                <option value="age">Trưởng phòng</option>
+                <option value="age">Phó phòng</option>
+                <option value="age">Quản lý</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><input  style="background: orange" type="button" name="a" value="Thêm mới"></td>
+            <td><input  style="background: orange" type="button" name="a" value="Nhập lại"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -4,86 +4,84 @@
     <meta charset="UTF-8">
     <title>Bài 9</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .container {
-            background: green;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem 5%;
-            display: flex;
-            align-items: center;
-            transition: .5s;
+        .menu{
+            background: #134D04;
+            text-align: center;
+            padding: 5px;
+            user-select: none;
         }
-
-        .navbar {
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .navbar li {
-            list-style: none;
-            margin-right: 1rem;
+        .menu ul li{
+            /*nằm ngang*/
+            /*float: left;*/
+            display: inline-block;
+            width: 140px;
+            /*chuyển tiếp*/
+            transition: 0.5s;
+            /*bo góc*/
+            border-radius: 3px;
             position: relative;
         }
-
-        .navbar a {
-            margin-right: 8.5rem;
-            text-decoration: none;
+        /*Khi rê chuột vào li thì li đổi màu nền*/
+        .menu ul li:hover{
+            background: #51CC0E;
+        }
+        /*Khi hover vào li cha thì .submenu sẽ hiện ra dưới dạng khối*/
+        .menu ul li:hover .submenu{
+            display: block;
+        }
+        .menu ul li a{
             color: white;
+            /*bỏ đường gạch chân*/
+            text-decoration: none;
+            display: block;
             padding: 10px;
-            transition: background-color 0.3s, color 0.3s;
-            border-radius: 5px;
         }
-
-        .navbar a:hover {
-            color: green;
-            background-color: lightgreen;
-        }
-
-        .sub-menu {
-            display: none;
+        .menu ul li .submenu{
+            /*định vị trí submenu*/
             position: absolute;
-            background-color: green;
+            background: #134D04;
+            left: 15px;
             width: 160px;
-            top: 100%;
-            left: 0;
+            /*Ban đầu submenu sẽ bị ẩn*/
+            display: none;
         }
-
-        .navbar li:hover .sub-menu {
-            display: block;
+        .menu ul li .submenu ul li{
+            text-align: left;
+            border-bottom: 1px solid grey;
+            border-radius: 0;
         }
-
-        .sub-menu a {
-            display: block;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
+        .menu ul li .submenu ul li a{
+            transition: 1s;
         }
-
-        .container {
-            width: 100%;
-            margin: 10px auto;
+        .menu ul li .submenu ul li:hover{
+            background: transparent;
+            /*color: black;*/
+        }
+        /*Khi hover vào li của submenu thì thẻ a nằm trong li hover sẽ chuyển màu chữ*/
+        .menu ul li .submenu ul li:hover a{
+            color: green;
+        }
+        .menu ul li .submenu ul li:last-child{
+            border-bottom: none;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="menu">
-        <ul class="navbar">
+        <ul>
             <li><a href="#">Home</a></li>
-            <li>
-                <a href="#">HTML</a>
-                <div class="sub-menu">
+            <li><a href="#">HTML</a>
+                <!-- tạo submenu của HTML -->
+                <div class="submenu">
                     <ul>
                         <li><a href="#">Descript</a></li>
-                        <li><a href="#">Tag</a></li>
+                        <li><a href="#">Tags</a></li>
                         <li><a href="#">Example</a></li>
                     </ul>
                 </div>

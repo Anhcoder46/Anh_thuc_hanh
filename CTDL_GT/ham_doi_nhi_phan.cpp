@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 void np(int n) {
 	if(n > 0) {
 		np(n / 2);

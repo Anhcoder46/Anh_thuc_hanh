@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 800px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 10px 7px;
+            background: #08960F;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .header p {
+            margin-top: -5px;
+        }
+
+        .center {
+            display: flex;
+            border: 1px solid black;
+            margin: 10px 0;
+        }
+
+        .center .menu {
+            width: 20%;
+        }
+
+        .center .menu ul li {
+            list-style: none;
+        }
+
+        .center .menu ul li a {
+            border: 1px solid grey;
+            color: black;
+            display: block;
+            text-decoration: none;
+        }
+
+        .center .menu ul li:hover {
+            color: white;
+            background: limegreen;
+        }
+
+        .center .content {
+            width: 80%;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content .left {
+            width: 70%;
+            padding: 10px 20px 0 10px;
+        }
+
+        .content .left .top h2 {
+            line-height: 20px;
+        }
+
+        .content .left .top img {
+            width: 10%;
+            height: 10%;
+        }
+
+        .content .left .bottom img {
+            width: 10%;
+            height: 10%;
+        }
+
+        .content .right {
+            width: 30%;
+            background: #13D7D9;
+        }
+
+        .footer {
+            text-align: center;
+            background: lightgrey;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Welcome to my homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div class="center">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="top">
+                    <h2>
+                        Same Page Different<br>
+                        Stylesheets
+                    </h2>
+                    <img src="2.jpg" align="left">
+                    <p>This is a demon is a demon is a demon is a demon is a demon is a demon
+                        is a demon is a demon is a demon is a demon is a demon </p>
+                    <div style="clear: both;"></div>
+                    <p>
+                        <a href="#">Stylesheet1</a>,
+                        <a href="#">Stylesheet1</a>,
+                        <a href="#">Stylesheet1</a>,
+                        <a href="#">Stylesheet1</a>
+                    </p>
+                </div>
+                <div class="bottom">
+                    <h2>No Style</h2>
+                    <img src="1.jpg" align="right">
+                    <p>This is a demon is a demon is a demon is a demon is a demon is a demon
+                        is a demon is a demon is a demon is a demon is a demon </p>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Side-bar</h2>
+                <p>This is a demon is a demon is a demon is a demon is a demon is a demon
+                    is a demon is a demon is a demon is a demon is a demon </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        This is a demon is a demon is a demon is a demon is a demon is a demon is a demon
+        is a demon is a demon is a demon is a demon
+    </div>
+</div>
+</body>
+</html>
