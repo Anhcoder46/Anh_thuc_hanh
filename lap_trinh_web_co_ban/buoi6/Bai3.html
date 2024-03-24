@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    do {
+        var a = parseInt(prompt("Nhap a: "));
+    } while (isNaN(a));
+    var b = parseInt(prompt("Nhap b: "));
+    if (a == 0 && b == 0) {
+        alert("Phương trinh vo so nghiem!");
+    } else if (a == 0 && b != 0) {
+        alert("Phuong trinh vo nghiem");
+    } else {
+        const x = -b / a;
+        alert("Phuong trinh co nghiem x = " + x);
+    }
+</script>
+</body>
+</html>

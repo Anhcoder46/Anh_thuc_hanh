@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+</head>
+<body>
+<div id="check">Div1</div>
+<div class="checks">Div2</div>
+  <input id="name" type="text" name=""><br>
+  <input type="button" value="Show name" onclick="show()" name="">
+
+<script>
+  function show() {
+    // Lấy textbox bằng 3 ham get bằng 2 hàm query
+    var a = document.getElementById('name').value;
+    //var a = document.getElementsByTagName('name').value;
+    //var a = document.getElementsByClassName('name').value;
+
+    //2 hàm query
+    //var a = document.querySelectorAll("div.checks");
+    //var a = document.querySelector("div.checks");
+    // Hiển thị nội dung textbox đó bằng alert
+    alert("Nhap ky tu: " + a);
+  }
+</script>
+</body>
+</html>

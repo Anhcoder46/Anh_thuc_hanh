@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        var namSinh;
+        var d = new date();
+        var namHienTai = d.getFullYear();
+        do {
+            namSinh = prompt("Nhập năm sinh của bạn: ", 2004);
+        } while (namSinh > namHienTai);
+        alert("Tuoi cua ban: " + (namHienTai - namSinh));
+    </script>
+</body>
+</html>
