@@ -1,11 +1,8 @@
 package buoi6.BaiTapVeNha;
 
 public class Pramater {
-    // dấu ... trong khai báo phương thức public static void tong(int... n) trong Java được gọi là "varargs" (viết tắt của "variable-length arguments").
-    // Dấu "..." cho phép phương thức nhận một số lượng biến đối số không xác định trước và các đối số này sẽ được truyền vào dưới dạng một mảng.
     public static void tong(int... n) {
         int sum = 0;
-        // for(int i : a) dùng để thực hiện một chuổi lệnh lặp lại một số lần cụ thể
         for (int tam : n) {
             sum += tam;
         }
@@ -21,7 +18,12 @@ public class Pramater {
     }
 
     public static void min(int... n) {
-        int min = Integer.MAX_VALUE;
+        if (n.length == 0) {
+            System.out.println("Không có số nguyên");
+            return;
+        }
+
+        int min = n[0];
         for (int tam : n) {
             if (tam < min) {
                 min = tam;
@@ -31,7 +33,12 @@ public class Pramater {
     }
 
     public static void min(double... n) {
-        double min = Double.MAX_VALUE;
+        if (n.length == 0) {
+            System.out.println("Không có số thực");
+            return;
+        }
+
+        double min = n[0];
         for (double tam : n) {
             if (tam < min) {
                 min = tam;
@@ -39,4 +46,11 @@ public class Pramater {
         }
         System.out.println("Số thực nhỏ nhất: " + min);
     }
+
+//    public static void main(String[] args) {
+//        Pramater.tong(1, 2, 3);
+//        Pramater.tong(3.6,5.7,3.8,1.0);
+//        Pramater.min(1, 2, 3);
+//        Pramater.min(3.6,5.7,3.8,1.0);
+//    }
 }

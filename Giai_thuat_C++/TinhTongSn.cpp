@@ -1,10 +1,9 @@
 #include<iostream>
 using namespace std;
-long long S(int n) {
+int S(int n) {
 	if(n == 1) {
 		return 1;
-	}
-	else {
+	} else {
 		return n + S(n - 1);
 	}
 }

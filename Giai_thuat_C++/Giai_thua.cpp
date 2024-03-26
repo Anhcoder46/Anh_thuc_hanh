@@ -1,13 +1,27 @@
 #include<iostream>
 using namespace std;
-int main() {
-	int giai_thua = 1;
-	int n;
-	cout << "Nhap n: ";
-	cin >> n;
-	for(int i = 1; i <= n; i++) {
-		giai_thua *= i;
+int gt(int n) {
+	if(n <= 1) {
+		return n;
+	} else {
+		return n * gt(n - 1);
 	}
-	cout << "Giai thua cua " << n << " la: " << giai_thua << endl;
-	return giai_thua; 
 }
+
+int main() {
+	int n = 0;
+	cin >> n;
+	cout << gt(n);
+	return 0;
+}
+
+
+//gt(5) = 5 * gt(4)
+//      = 5 * (4 * gt(3))
+//      = 5 * (4 * (3 * gt(2)))
+//      = 5 * (4 * (3 * (2 * gt(1))))
+//      = 5 * (4 * (3 * (2 * 1)))
+//      = 5 * (4 * (3 * 2))
+//      = 5 * (4 * 6)
+//      = 5 * 24
+//      = 120
