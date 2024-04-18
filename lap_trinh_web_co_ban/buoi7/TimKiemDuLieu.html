@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Demo</title>
 </head>
 <body>
-$END$
+<h1>Tìm kiếm dữ liệu</h1>
+<table>
+    <tr>
+        <td>Nhập tiêu đề</td>
+        <td>
+            <input type="text"><br>
+            <a href="#" onclick="show(this)">Tìm kiếm nâng cao</a>
+        </td>
+    </tr>
+
+    <tr id="row" style="display: none;">
+        <td>Chọn chuyên mục</td>
+        <td>
+            <select>
+                <option>PHP</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JAVASCRIPT</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Tìm kiếm">
+        </td>
+    </tr>
+</table>
+
+<script>
+    function show(e) {
+        var r = document.getElementById('row');
+        if (e.innerHTML == "Tìm kiếm nâng cao") {
+            e.innerHTML = "Bỏ tìm kiếm nâng cao";
+            r.style.display = 'table-row';
+        } else {
+            e.innerHTML = "Tìm kiếm nâng cao";
+            r.style.display = 'none';
+        }
+    }
+</script>
 </body>
 </html>

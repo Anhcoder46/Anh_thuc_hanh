@@ -7,3 +7,20 @@
     color: greenyellow;
     font-size: 20px;
 } */
+
+/* :root {
+    --text-color: rgb(0, 195, 255);
+}
+
+h1 {
+    --my-color: red;
+    color: var(--my-color);
+}
+
+h2 {
+    color: var(--my-color);
+}
+
+h3 {
+    color: var(--text-color);
+} */

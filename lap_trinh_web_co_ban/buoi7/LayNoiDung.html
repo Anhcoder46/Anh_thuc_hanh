@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Demo</title>
 </head>
 <body>
-$END$
+    <h2>Nội dung ban đầu</h2>
+    <input type="button" value="Lấy nội dung" onclick="getContent()">
+    <input type="button" value="Thay đổi nội dung" onclick="setContent()">
+    <script>
+        var h2 = document.getElementsByTagName('h2');
+        function getContent() {
+            alert(h2[0].innerHTML);
+        }
+
+        function setContent() {
+            var content = prompt("Nhập nội dung mới: ", h2[0].innerHTML);
+            h2[0].innerHTML = content;
+        }
+    </script>
 </body>
 </html>

@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Demo</title>
 </head>
 <body>
-$END$
+<table style="border: 1px solid black;">
+    <tr>
+        <td><input type="checkbox" id="chkName1"></td>
+        <td><label for="chkName1">Trần Đức Anh</label></td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" id="chkName2"></td>
+        <td><label for="chkName2">Anh Trần</label></td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" id="chkName3"></td>
+        <td><label for="chkName3">Đức Anh</label></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="Chọn hết" onclick="checkAll()"></td>
+        <td><input type="button" value="Bỏ chọn" onclick="uncheckAll()"></td>
+    </tr>
+</table>
+<script>
+    var chk = document.querySelectorAll("input[type='checkbox']");
+    function checkAll() {
+        for (var i = 0; i < chk.length; i++) {
+            chk[i].checked = true;
+        }
+    }
+
+    function uncheckAll() {
+        for (var i = 0; i < chk.length; i++) {
+            chk[i].checked = false;
+        }
+    }
+</script>
 </body>
 </html>

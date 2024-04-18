@@ -1,3 +1,4 @@
+// Tính tổng S(n) = 1 + 2 + 3 + ... + n với n >= 0
 #include<iostream>
 using namespace std;
 int S(int n) {

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <input type="button" value="Click" onclick="change(this)">
+<script>
+    function change(e) {
+        if (e.type == "button") {
+            e.type = "text";
+        } else {
+            e.type = "button";
+        }
+    }
+</script>
 </body>
 </html>
