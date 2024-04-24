@@ -1,6 +1,5 @@
 // Hàm đổi số thập phân ra nhị phân
 #include<iostream>
-#include<cmath>
 using namespace std;
 
 void tp(int n) {

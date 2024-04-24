@@ -8,6 +8,7 @@ int S(int n) {
 		return S(n - 1) + (2 * n + 1);
 	}
 }
+
 int main() {
 	int n = 0;
 	cin >> n;

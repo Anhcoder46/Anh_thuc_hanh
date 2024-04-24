@@ -6,20 +6,23 @@ using namespace std;
 // Đầu tiên ta lấy cột C làm cột trung gian. Chuyển n - 1 chiếc đĩa sang cột B
 // Ta chuyển chiếc đĩa lớn nhất sang cột C
 // Lấy cột A làm cột trung gian chuyển n - 1 chiếc đĩa từ cột B sang cột C
-void haNoi(int n, char cotChinh, char cotPhu, char cotDich) {
-	if(n == 1) {
-		cout << "Di chuyen dia " << n << " tu " << cotChinh << " sang " << cotDich << endl;
-		return;
+void chuyen(int n, char a, char c) {
+	cout << "Chuyen dia thu " << n << " tu coc "<< a <<" sang coc "<< c << endl;
+}
+void thapHaNoi(int n, char a, char b, char c) {
+    if (n == 1) {
+    	chuyen(1, a, c);
+	} else {
+		thapHaNoi(n - 1, a, c, b); 
+		chuyen(n, a, c);
+		thapHaNoi(n - 1, b, a, c);
 	}
-	haNoi(n - 1, cotChinh, cotDich, cotPhu);
-	cout << "Di chuyen dia " << n << " tu " << cotChinh << " sang " << cotDich << endl;
-	haNoi(n - 1, cotPhu, cotChinh, cotDich);
 }
 
 int main() {
-	int n;
-	cout << "Nhap so luong dia: ";
+    int n;
+    cout << "Nhap n: ";
 	cin >> n;
-	haNoi(n, 'A', 'B', 'C');
-	return 0;
+    thapHaNoi(n, 'A', 'B', 'c');
+    return 0;
 }

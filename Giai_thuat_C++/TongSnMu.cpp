@@ -9,9 +9,10 @@ int S(int n) {
 		return S(n - 1) + pow(n, 2);
 	}
 }
+
 int main() {
 	int n = 0;
-	cin >> n;
+	cin >> n; 
 	cout << S(n);
 	return 0;
 }

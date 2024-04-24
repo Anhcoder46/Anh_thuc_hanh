@@ -1,5 +1,7 @@
 package buoi7;
 
+import buoi9.SinhVien;
+
 public class Student {
     String ten;
     String lop;

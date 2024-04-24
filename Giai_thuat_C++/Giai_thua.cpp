@@ -11,7 +11,7 @@ int gt(int n) {
 
 int main() {
 	int n = 0;
-	cin >> n;
+	cin >> n; 
 	cout << gt(n);
 	return 0;
-}
+}  
