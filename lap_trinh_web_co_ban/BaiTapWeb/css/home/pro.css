@@ -1,0 +1,23 @@
+.center {
+    text-align: center;
+}
+
+.center .pagination {
+    display: inline-block;
+}
+
+.center .pagination li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.center .pagination li a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+
+.center .pagination li a.active {
+    background-color: #ccc;
+}

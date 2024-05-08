@@ -1,0 +1,85 @@
+/* CSS cho phần sản phẩm */
+.products {
+    padding: 20px;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-product {
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img-product {
+    text-align: center;
+}
+
+.img-prd {
+    width: 100%;
+    height: auto;
+}
+
+.content-product {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.content-product-h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.content-product-deltals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.btn-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color: #45a049;
+}
+
+/* CSS cho phân trang */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination a.active {
+    background-color: #45a049;
+}
+

@@ -1,21 +1,19 @@
 #include<iostream>
-using namespace std;
+#include<string>
+using namespace std; 
 // Viết hàm đệ quy xác định chiều dài chuỗi
-int length(string s) {
-  if (s.empty()) {
-    return 0;
-  } else {
-    return 1 + length(s.substr(1));
-  }
+int doDai(char s[], int dem) {
+    if (s[dem] != '\0') {
+        return doDai(s, dem + 1);
+    } else {
+        return dem;
+    }
 }
 
 int main() {
-  string s;
-  cout << "Nhap chuoi s: ";
-  getline(cin, s);
-
-  int len = length(s);
-  cout << "Chieu dai cua chuoi s la: " << len << endl;
-
-  return 0;
+	char s[1000];
+	int dem = 0;
+	cout << "Nhap chuoi: ";
+	cin.getline(s, 1000); 
+	cout << "Do dai xau s la: " << doDai(s, 0);
 }

@@ -1,19 +1,23 @@
-#include<iostream>
+ //In đảo ngược số n nguyen duong
+#include <iostream>
 using namespace std;
-// In đảo ngược số n nguyên dương
-void daoNguoc(int n) {
-	if(n == 0) {
-		return;
-	} else {
-		cout << n % 10;
-		daoNguoc(n / 10);
-	}
+int daonguoc(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    cout << n % 10;
+    return daonguoc(n / 10);
 }
 
 int main() {
-	int n;
-	cout << "Nhap n: ";
-	cin >> n;
-	daoNguoc(n);
-	return 0;
+    int n;
+    cout << "Nhap so nguyen duong n: ";
+    cin >> n;
+	cout << "So dao nguoc cua " << n << " la: ";
+    if (n < 10) {
+        cout << n;
+    } else {
+        daonguoc(n);
+    }
+    return 0;
 }

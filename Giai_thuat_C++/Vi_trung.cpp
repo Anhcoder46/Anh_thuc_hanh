@@ -11,7 +11,7 @@ int viTrung(int n, int banDau) {
 
 int main() {
 	int banDau = 2;
-	int soGio = 5;
+	int soGio = 2;
 	cout << "So luong vi khuan sau 5h la: " << viTrung(soGio, banDau) << endl;
 	return 0;
 }

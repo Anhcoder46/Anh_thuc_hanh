@@ -6,8 +6,7 @@ double tien(double tienGoc, double laiSuat, int nam) {
 	if(nam == 0) {
 		return tienGoc;
 	} else {
-		double laiSuatHienTai = tienGoc * laiSuat / 100;
-		return tien(tienGoc + laiSuatHienTai, laiSuat, nam - 1);
+		return tien(tienGoc + (tienGoc * laiSuat / 100), laiSuat, nam - 1);
 	}
 }
 
