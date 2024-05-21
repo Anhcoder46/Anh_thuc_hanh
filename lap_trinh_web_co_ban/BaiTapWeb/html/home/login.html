@@ -1,269 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products</title>
-  <link rel="stylesheet" href="/css/home/reser.css">
+  <title>Bảng thông tin sữa</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fefefe;
+    }
+  </style>
 </head>
 <body>
-<section id="wrapper">
-  <div class="products">
-    <ul id="product-list">
-      <!-- Sản phẩm sẽ được thêm bằng JavaScript -->
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk25.jpg" alt="Kem Vinamilk Vani">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Kem Vinamilk Vani</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">313.800đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
+<h1>THÔNG TIN SỬA</h1>
 
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk26.jpg" alt="Sữa Tươi Tiệt Trùng Vinamilk 100% Organic">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Tươi Tiệt Trùng Vinamilk 100% Organic</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">447.698đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
+<table>
+  <tr>
+    <th>STT</th>
+    <th>Tên sữa</th>
+    <th>Hãng sữa</th>
+    <th>Loại sữa</th>
+    <th>Trọng lượng</th>
+    <th>Đơn giá</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Fristi</td>
+    <td>Dutch Lady</td>
+    <td>Sữa tươi</td>
+    <td>180 gram</td>
+    <td>3.600 VNĐ</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Sữa chua Plus</td>
+    <td>Vinamilk</td>
+    <td>Sữa chua</td>
+    <td>120 gram</td>
+    <td>4.000 VNĐ</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Sữa chua Cô Gái Hà Lan</td>
+    <td>Dutch Lady</td>
+    <td>Sữa chua</td>
+    <td>100 gram</td>
+    <td>3.000 VNĐ</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Sữa chua uống Cô Gái Hà Lan</td>
+    <td>Dutch Lady</td>
+    <td>Sữa chua</td>
+    <td>110 gram</td>
+    <td>2.500 VNĐ</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Dielac Sure</td>
+    <td>Vinamilk</td>
+    <td>Sữa bột</td>
+    <td>400 gram</td>
+    <td>90.000 VNĐ</td>
+  </tr>
+</table>
 
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk27.jpg" alt="Thức Uống Sữa Trái Cây Hero Hương Kẹo Nho">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Thức Uống Sữa Trái Cây Hero Hương Kẹo Nho</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">176.099đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk28.jpg" alt="Sữa Chua Ăn Vinamilk Dâu">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Chua Ăn Vinamilk Dâu</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">26.534đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk29.jpg" alt="Sữa Bột Dinh Dưỡng Nguyên Kem Vinamilk Dinh Dưỡng Có Đường">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Bột Dinh Dưỡng Nguyên Kem Vinamilk Dinh Dưỡng Có Đường</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">167.107đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk30.jpg" alt="Sữa Dinh Dưỡng Vinamilk Adm Socola">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Dinh Dưỡng Vinamilk Adm Socola</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">202.954đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk31.jpg" alt="Sữa Dinh Dưỡng Vinamilk Adm Có Đường">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Dinh Dưỡng Vinamilk Adm Có Đường</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">202.954đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk32.jpg" alt="Sữa Đậu Nành Vinamilk Super Nut Hạnh Nhân">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Đậu Nành Vinamilk Super Nut Hạnh Nhân</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">285.327đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk33.jpg" alt="Sữa Bột Pha Sẵn Dielac Grow Plus Sữa Non (Đỏ) - Cho Trẻ Trên 1 Tuổi">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Bột Pha Sẵn Dielac Grow Plus Sữa Non (Đỏ) - Cho Trẻ Trên 1 Tuổi</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">364.954đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk34.jpg" alt="Sữa Bột Dielac Grow Plus Sữa Non 2+ - Cho Trẻ Từ 2 Đến 10 Tuổi">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Bột Dielac Grow Plus Sữa Non 2+ - Cho Trẻ Từ 2 Đến 10 Tuổi</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">340.997đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk35.jpg" alt="Sữa Bột Pha Sẵn Dielac Alpha Gold - Cho Trẻ Trên 1 Tuổi">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Bột Pha Sẵn Dielac Alpha Gold - Cho Trẻ Trên 1 Tuổi</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">347.635đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk36.jpg" alt="Trà Atiso Vfresh Atiso Không Đường">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Trà Atiso Vfresh Atiso Không Đường</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">237.432đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk37.jpg" alt="Sữa Đặc Tài Lộc">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Đặc Tài Lộc</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">14.940đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk38.jpg" alt="Trà Atiso Vfresh Atiso Ít Đường">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Trà Atiso Vfresh Atiso Ít Đường</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">237.432đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk39.jpg" alt="Nước Ép Vfresh Nectar Đào">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Nước Ép Vfresh Nectar Đào</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">405.164đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-      <li class="main-product no-margin ">
-        <div class="img-product ">
-          <img class="img-prd " src="/image/milk40.jpg" alt="Sữa Đặc Tài Lộc">
-        </div>
-        <div class="content-product ">
-          <h3 class="content-product-h3 ">Sữa Đặc Tài Lộc</h3>
-          <div class="content-product-deltals ">
-            <div class="price ">
-              <span class="money ">709.672đ</span>
-            </div>
-            <button type="button" class="btn btn-cart ">Thêm Vào Giỏ</button>
-          </div>
-        </div>
-      </li>
-
-    </ul>
-    <div class="pagination">
-      <button id="prev-btn">&lt;</button>
-      <span id="page-num1">1</span>
-      <span id="page-num2">2</span>
-      <span id="page-num3">3</span>
-      <span id="page-num4">4</span>
-      <span id="page-num5">5</span>
-      <button id="next-btn">&gt;</button>
-    </div>
-  </div>
-</section>
-
-<script src="/javascript/home/scripts.js"></script>
+<div style="text-align: center;">
+  <p><<>>></p>
+</div>
 </body>
 </html>
