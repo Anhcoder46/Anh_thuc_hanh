@@ -6,21 +6,27 @@ import java.awt.event.ActionListener;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
-public class Calculator {
+public class MayTinh {
     private JTextField txtA;
-    private JRadioButton radioCong;
-    private JRadioButton radioTru;
-    private JRadioButton radioNhan;
-    private JRadioButton radioChia;
     private JTextField txtB;
-    private JFormattedTextField txtKQ;
+    private JRadioButton radioCong;
+    private JRadioButton radioChia;
+    private JRadioButton radioNhan;
+    private JRadioButton radioTru;
+    private JButton btnXoa;
     private JButton btnTinh;
     private JButton btnCancel;
-    JPanel mainPanel;
-    private JButton btnXoa;
+    private JTextField txtKQ;
+    private JPanel mainPanel;
+
     private final ButtonGroup groupPhepTinh;
 
-    public Calculator() {
+    public MayTinh() {
+        JFrame frame = new JFrame("Máy tính");
+        frame.setContentPane(mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
         groupPhepTinh = new ButtonGroup();
         groupPhepTinh.add(radioCong);
         groupPhepTinh.add(radioTru);
@@ -52,7 +58,7 @@ public class Calculator {
                     }
                     txtKQ.setText(String.valueOf(kq));
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(mainPanel, "Vui lòng nhập số hợp lệ!", "Lỗi định dạng", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(mainPanel, "Vui lòng nhập số hợp lệ", "Lỗi định dạng", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
@@ -89,16 +95,22 @@ public class Calculator {
                         txtB.selectAll();
                     }
                 } catch (NumberFormatException ex) {
+
                 }
             }
         });
     }
 
+
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Calculator");
-        frame.setContentPane(new Calculator().mainPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new QuocGia();
+            }
+        });
+    }
+
+    public void setVisible(boolean b) {
     }
 }

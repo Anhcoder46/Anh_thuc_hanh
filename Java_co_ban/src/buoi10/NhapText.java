@@ -1,4 +1,4 @@
-package buoi10.Nhap;
+package buoi10;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,14 +15,12 @@ public class NhapText {
     private JPanel mainPanel;
 
     public NhapText() {
-        // Tạo cửa sổ JFrame
-        JFrame frame = new JFrame("Nhập Text: ");
+        JFrame frame = new JFrame("Nhập Text");
         frame.setContentPane(mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
 
-        // Thiết lập sự kiện cho checkbox Italic
         chbItalic.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -30,7 +28,6 @@ public class NhapText {
             }
         });
 
-        // Thiết lập sự kiện cho checkbox Bold
         chbBold.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -38,7 +35,6 @@ public class NhapText {
             }
         });
 
-        // Thiết lập sự kiện cho nút OK
         btnOk.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -46,7 +42,6 @@ public class NhapText {
             }
         });
 
-        // Thiết lập sự kiện cho nút Cancel
         btnCancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -74,5 +69,8 @@ public class NhapText {
                 new NhapText();
             }
         });
+    }
+
+    public void setVisible(boolean b) {
     }
 }
