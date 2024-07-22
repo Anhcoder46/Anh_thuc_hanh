@@ -47,7 +47,7 @@
         <properties>
           <editable value="false"/>
           <enabled value="true"/>
-          <text value="Trần Đức Anh&#10;22CT2&#10;Trường Đại học Kiến trúc Đà Nẵng"/>
+          <text value="Họ &amp; tên: Trần Đức Anh&#10;Lớp 22CT1"/>
         </properties>
       </component>
     </children>

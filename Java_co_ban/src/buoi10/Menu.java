@@ -14,7 +14,7 @@ public class Menu extends JFrame {
     private JMenuItem menuItemDanhSach;
 
     public Menu() {
-        setTitle("Bài tập gộp trong Menu");
+        setTitle("Trần Đức Anh 22CT1");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

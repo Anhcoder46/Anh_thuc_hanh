@@ -10,7 +10,7 @@ public class QuocGia {
     private JLabel lbFlag;
 
     public QuocGia() {
-        JFrame frame = new JFrame("Quốc gia");
+        JFrame frame = new JFrame("Trần Đức Anh 22CT1");
         frame.setContentPane(mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

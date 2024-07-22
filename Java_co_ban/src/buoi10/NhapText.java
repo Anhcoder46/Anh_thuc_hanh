@@ -15,7 +15,37 @@ public class NhapText {
     private JPanel mainPanel;
 
     public NhapText() {
-        JFrame frame = new JFrame("Nhập Text");
+        txtText = new JTextField("Trần Đức Anh 22CT1", 20);
+        btnOk = new JButton("OK");
+        btnCancel = new JButton("Cancel");
+        chbItalic = new JCheckBox("Italic");
+        chbBold = new JCheckBox("Bold");
+        mainPanel = new JPanel(new GridBagLayout());
+
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(5, 5, 5, 5);
+        gbc.anchor = GridBagConstraints.WEST;
+
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        mainPanel.add(txtText, gbc);
+
+        gbc.gridx = 1;
+        mainPanel.add(chbItalic, gbc);
+
+        gbc.gridx = 2;
+        mainPanel.add(chbBold, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 3;
+        gbc.anchor = GridBagConstraints.CENTER;
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 0));
+        buttonPanel.add(btnOk);
+        buttonPanel.add(btnCancel);
+        mainPanel.add(buttonPanel, gbc);
+
+        JFrame frame = new JFrame("Trần Đức Anh 22CT1");
         frame.setContentPane(mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

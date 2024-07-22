@@ -22,7 +22,7 @@ public class MayTinh {
     private final ButtonGroup groupPhepTinh;
 
     public MayTinh() {
-        JFrame frame = new JFrame("Máy tính");
+        JFrame frame = new JFrame("Trần Đức Anh 22CT1");
         frame.setContentPane(mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

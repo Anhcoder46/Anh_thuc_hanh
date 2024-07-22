@@ -14,7 +14,7 @@ public class DanhSach {
     private JButton btnCancel;
 
     public DanhSach() {
-        JFrame frame = new JFrame("Danh Sách");
+        JFrame frame = new JFrame("Trần Đức Anh 22CT1");
         frame.setContentPane(mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
