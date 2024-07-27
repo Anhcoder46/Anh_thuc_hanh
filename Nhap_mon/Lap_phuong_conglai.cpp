@@ -1,17 +1,23 @@
 #include <stdio.h>
 
 int main() {
-  for (int i = 100; i <= 999; i++) {
-    int tram = i / 100;
-    int chuc = (i % 100) / 10;
-    int donvi = i % 10;
+    int n;
+    printf("Nhap n: ");
+    scanf("%d", &n);
 
-    int tongLapPhuong = tram * tram * tram + chuc * chuc * chuc + donvi * donvi * donvi;
+    for (int i = 1; i <= n; i++) {
+        int tram = i / 100;
+        int chuc = (i % 100) / 10;
+        int donvi = i % 10;
 
-    if (tongLapPhuong == i) {
-      printf("%d\n", i);
+        int tongLapPhuong = tram * tram * tram + chuc * chuc * chuc + donvi * donvi * donvi;
+
+        if (tongLapPhuong == i) {
+            printf("%d la so Armstrong\n", i);
+        } else {
+        	printf("%d khong phai la so Armstrong\n", i);
+		}
     }
-  }
 
-  return 0;
+    return 0;
 }

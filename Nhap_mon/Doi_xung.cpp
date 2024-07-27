@@ -1,32 +1,22 @@
-#include <iostream>
-
-using namespace std;
-
-bool isPalindrome(int n) {
-  if (n < 0) {
-    return false;
-  }
-
-  int reversedNum = 0, temp = n;
-  while (temp > 0) {
-    int lastDigit = temp % 10;
-    reversedNum = reversedNum * 10 + lastDigit;
-    temp /= 10;
-  }
-
-  return n == reversedNum;
-}
+#include <stdio.h>
 
 int main() {
-  int n;
-  cout << "Nhap so nguyen n: ";
-  cin >> n;
-
-  if (isPalindrome(n)) {
-    cout << n << " la so doi xung" << endl;
-  } else {
-    cout << n << " khong phai la so doi xung" << endl;
-  }
-
-  return 0;
+	int n, dao = 0, dv;
+	do {
+		printf("Nhap so nguyen duong: ");
+		scanf("%d", &n);	
+	} while(n < 0);
+	int tam = n;
+	while(n != 0) {
+		dv = n % 10;
+		dao = dao * 10 + dv;
+		n = n / 10;
+	}
+	
+	if(dao == tam) {
+		printf("\n%d la so doi xung", tam);
+	} else {
+		printf("\n%d khong doi xung", tam);
+	}
+	return 0;
 }

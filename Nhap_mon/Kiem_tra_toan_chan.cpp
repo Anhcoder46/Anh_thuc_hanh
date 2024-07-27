@@ -1,17 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    printf("Nhap so nguyen duong n: ");
-    scanf("%d", &n);
-
-    while (n > 0) {
-        int tc = n % 10;
-        if (tc % 2 != 0) {
-            printf("Khong phai la so toan chan",  n);
-        }
-        n /= 10;   
-    }
-	printf("La so toan chan", n);   
+	int n, kt = 1, dv;
+	do {
+		printf("Nhap so nguyen duong: ");
+		scanf("%d", &n);	
+	} while(n < 0);
+	
+	// Kiem tra so toan chan
+	int tam = n;
+	while(n != 0) {
+		dv = n % 10;
+		if(dv % 2 == 1) {
+			kt = 0;
+			break;
+		}
+		n = n / 10;
+	}
+	
+	if(kt == 1) {
+		printf("%d la so toan chan", tam);
+	} else {
+		printf("%d khong phai la so toan chan", tam); 
+	}
     return 0;
 }
