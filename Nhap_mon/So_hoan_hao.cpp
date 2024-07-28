@@ -1,39 +1,23 @@
 #include <stdio.h>
-#include <math.h>
-
-int isPerfectNumber(int num) {
-    int sum = 1;
-    for (int i = 2; i * i <= num; ++i) {
-        if (num % i == 0) {
-            sum += i;
-            if (i * i != num) {
-                sum += num / i;
-            }
-        }
-    }
-    return sum == num;
-}
-
-int isSquareNumber(int num) {
-    int root = sqrt(num);
-    return root * root == num;
-}
 
 int main() {
-    int number;
-    printf("Nhập vào một số nguyên: ");
-    scanf("%d", &number);
+    int n, sum = 0;
 
-    if (isPerfectNumber(number)) {
-        printf("%d là số hoàn hảo.\n", number);
-    } else {
-        printf("%d không phải là số hoàn hảo.\n", number);
+    do {
+        printf("Nhap n: ");
+        scanf("%d", &n);
+    } while(n < 0);
+
+    for (int i = 1; i <= n / 2; i++) {
+        if (n % i == 0) {
+            sum += i;
+        }
     }
 
-    if (isSquareNumber(number)) {
-        printf("%d là số chính phương.\n", number);
+    if (sum == n) {
+        printf("%d la so hoan hao\n", n);
     } else {
-        printf("%d không phải là số chính phương.\n", number);
+        printf("%d khong phai la so hoan hao\n", n);
     }
 
     return 0;

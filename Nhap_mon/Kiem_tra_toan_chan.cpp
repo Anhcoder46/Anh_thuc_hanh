@@ -6,8 +6,7 @@ int main() {
 		printf("Nhap so nguyen duong: ");
 		scanf("%d", &n);	
 	} while(n < 0);
-	
-	// Kiem tra so toan chan
+
 	int tam = n;
 	while(n != 0) {
 		dv = n % 10;
