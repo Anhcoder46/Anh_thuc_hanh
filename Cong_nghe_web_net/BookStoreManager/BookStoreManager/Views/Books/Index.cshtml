@@ -1,0 +1,112 @@
+﻿@model PagedList.IPagedList<BookStoreManager.Models.Book>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh sách sách</h2>
+
+<p>
+    @Html.ActionLink("Thêm sách mới", "Create", null, new { @class = "btn btn-warning" })
+</p>
+<!-- Đoạn cần thêm -->
+@using (Html.BeginForm("Index", "Book", FormMethod.Get, new { @class = "form-inline" }))
+{
+    <div class="form-group">
+        <label>Chủ đề:</label>@Html.DropDownList("CategoryID", null, htmlAttributes: new { @class = "form-control" }) <label>Tên sách: </label>
+        <input type="Text" class="form-control mx-sm-3" value="@ViewBag.Keyword" name="searchString" placeholder="Nhập tên sách cần tìm">
+        <input type="submit" class="btn btn-danger" value="Tìm sách">
+    </div>
+    <hr />
+}
+<!-- Kết thúc -->
+<table class="table">
+    <tr>
+        <th style="width:200px">
+            <!-- Đoạn cần thêm -->
+            @Html.ActionLink("Tên sách", "Index", new { sortProperty = "Title", sortOrder = ViewBag.SortOrder, searchString = ViewBag.Keyword, categoryID = ViewBag.Subject })
+            <!-- Kết thúc -->
+        </th>
+
+        <th>
+            @Html.ActionLink("Đơn giá", "Index", new { sortProperty = "Price", sortOrder = ViewBag.SortOrder, searchString = ViewBag.Keyword, categoryID = ViewBag.Subject })
+        </th>
+
+        <th>
+            @Html.ActionLink("Ngày xuất bản", "Index", new { sortProperty = "Published", sortOrder = ViewBag.SortOrder, searchString = ViewBag.Keyword, categoryID = ViewBag.Subject })
+
+        </th>
+
+        <th>
+            @Html.ActionLink("Tác giả", "Index", new { sortProperty = "AuthorID", sortOrder = ViewBag.SortOrder, searchString = ViewBag.Keyword, categoryID = ViewBag.Subject })
+
+        </th>
+        <th>
+            Chủ đề
+        </th>
+        <th>
+            Hình ảnh
+        </th>
+        <!-- Kết thúc -->
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Published)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.AuthorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                <img src="~/bookimages/@item.Images" />
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "Edit", new { id = item.BookID }) |
+                @Html.ActionLink("Xem", "Details", new { id = item.BookID }) |
+                @Html.ActionLink("Xóa", "Delete", new { id = item.BookID })
+            </td>
+        </tr>
+    }
+
+</table>
+<!-- Thêm mã phân trang -->
+<br />
+<div class="row">
+    <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+        @using (Html.BeginForm("Index", "Book", FormMethod.Get))
+        {
+            <p>
+                Kích thước trang: @Html.DropDownList("size", (List<SelectListItem>)ViewBag.Size, new { @onchange = "this.form.submit();" })
+            </p>
+
+            @Html.Hidden("page", (object)ViewBag.Page)
+            @Html.Hidden("sortProperty", (object)ViewBag.SortProperty)
+            @Html.Hidden("sortOrder", (object)ViewBag.SortOrder)
+            @Html.Hidden("searchString", (object)ViewBag.Keyword)
+            @Html.Hidden("categoryID", (object)ViewBag.Subject)
+        }
+    </div>
+    <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6 text-right">
+        Trang: @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+    </div>
+</div>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, size = ViewBag.CurrentSize, sortProperty = ViewBag.SortProperty, sortOrder = ViewBag.SortOrder, searchString = ViewBag.Keyword }))
+<!-- Kết thúc -->
